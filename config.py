@@ -15,7 +15,7 @@ class Config:
                    ['true', 'on', '1']
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    FLASKY_MAIL_SUBJECT_PREFIX = '[Hacker\'s]'
+    FLASKY_MAIL_SUBJECT_PREFIX = '[Hackers]'
     FLASKY_MAIL_SENDER = '782993095@qq.com'
     FLASKY_ADMIN = '782993095@qq.com'
     SSL_REDIRECT = False
