@@ -83,16 +83,16 @@ class SeleniumTestCase(unittest.TestCase):
                                   self.client.page_source))
 
         # navigate to login page
-        self.client.find_element_by_link_text('Log In').click()
+        self.client.find_element_by_link_text('登录').click()
         self.assertIn('<h1>Login</h1>', self.client.page_source)
 
         # login
-        self.client.find_element_by_name('email').\
+        self.client.find_element_by_name('邮箱').\
             send_keys('john@example.com')
-        self.client.find_element_by_name('password').send_keys('cat')
-        self.client.find_element_by_name('submit').click()
+        self.client.find_element_by_name('密码').send_keys('cat')
+        self.client.find_element_by_name('提交').click()
         self.assertTrue(re.search('Hello,\s+john!', self.client.page_source))
 
         # navigate to the user's profile page
-        self.client.find_element_by_link_text('Profile').click()
+        self.client.find_element_by_link_text('个人').click()
         self.assertIn('<h1>john</h1>', self.client.page_source)
