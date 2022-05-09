@@ -80,3 +80,6 @@ def deploy():
 
     # ensure all users are following themselves
     User.add_self_follows()
+
+if __name__ =="__main__":
+    app.run(debug=True)
