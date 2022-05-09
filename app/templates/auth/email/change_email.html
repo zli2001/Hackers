@@ -1,7 +1,0 @@
-<p>亲爱的 {{ user.username }},</p>
-<p>为了验证您的新邮箱， <a href="{{ url_for('auth.change_email', token=token, _external=True) }}">请点击链接</a>.</p>
-<p>您也可以粘贴链接到浏览器地址栏：</p>
-<p>{{ url_for('auth.change_email', token=token, _external=True) }}</p>
-<p>此致</p>
-<p>Hackers 团队</p>
-<p><small>此邮件无需回复。</small></p>
