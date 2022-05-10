@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="first commit new hackers">
+    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="add readme">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -447,7 +447,7 @@
       <workItem from="1652094142586" duration="2695000" />
       <workItem from="1652097171736" duration="17794000" />
       <workItem from="1652158208933" duration="1748000" />
-      <workItem from="1652160514387" duration="4196000" />
+      <workItem from="1652160514387" duration="4314000" />
     </task>
     <task id="LOCAL-00001" summary="cms登录，修改密码，banner界面布局完成，mongodb配置完成">
       <created>1535255722571</created>
@@ -554,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652164021990</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add readme">
+      <created>1652164775347</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1652164775347</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -638,7 +645,8 @@
     <MESSAGE value="相关功能完善" />
     <MESSAGE value="first commit" />
     <MESSAGE value="first commit new hackers" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit new hackers" />
+    <MESSAGE value="add readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="add readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -667,16 +675,6 @@
           <url>file://$PROJECT_DIR$/app/admin/views.py</url>
           <line>391</line>
           <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tasks.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tasks.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$USER_HOME$/anaconda3/envs/cms/Lib/site-packages/redis/connection.py</url>
