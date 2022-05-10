@@ -1,11 +1,20 @@
-flaskcms系统
+Hackers 开发者交流学习平台
+
+
+TODO:
+- [ ] 删除支付页面
+- [ ] 更换图标
+- [ ] 上传图片数据
+- [ ] 插入本地数据
+- [ ] **写文档**
+
+
 `部分相关：`
-三方登陆：微博登陆 三方登陆流程(https://blog.csdn.net/qq_42239520/article/details/85851232)
-支付：PaysApi
+~~支付：PaysApi~~
 基于Pyhon3.6的大型CMS管理系统
 内容存储：mysql
 图片存储：阿里云对象存储oss
-邮箱注册: flask_email  邮件支持流程(https://blog.csdn.net/qq_42239520/article/details/80368733)
+邮箱注册: flask_email 
 邮箱验证码：redis
 celery email task
 ...... 

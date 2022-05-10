@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="first commit">
+    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="first commit new hackers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/admin/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/album/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/album/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/front/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/front/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/front/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/front/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/front/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/front/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/groups/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/groups/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/common/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/layui/css/layui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/groups/create_group.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/groups/create_group.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/test.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/upload.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -461,7 +447,7 @@
       <workItem from="1652094142586" duration="2695000" />
       <workItem from="1652097171736" duration="17794000" />
       <workItem from="1652158208933" duration="1748000" />
-      <workItem from="1652160514387" duration="3343000" />
+      <workItem from="1652160514387" duration="4196000" />
     </task>
     <task id="LOCAL-00001" summary="cms登录，修改密码，banner界面布局完成，mongodb配置完成">
       <created>1535255722571</created>
@@ -561,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652096404292</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="first commit new hackers">
+      <created>1652164021990</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1652164021990</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -644,7 +637,8 @@
     <MESSAGE value="私信功能完成，以及相关功能完善，代码优化" />
     <MESSAGE value="相关功能完善" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="first commit new hackers" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit new hackers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
