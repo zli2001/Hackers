@@ -1,7 +1,7 @@
-Hackers 开发者交流学习平台
+# Hackers 开发者交流学习平台
 
 
-TODO:
+## TODO:
 - [ ] 删除支付页面
 - [ ] 更换图标
 - [ ] 上传图片数据
@@ -9,17 +9,24 @@ TODO:
 - [ ] **写文档**
 
 
-`部分相关：`
-~~支付：PaysApi~~
-基于Pyhon3.6的大型CMS管理系统
-内容存储：mysql
-图片存储：阿里云对象存储oss
-邮箱注册: flask_email 
-邮箱验证码：redis
-celery email task
-...... 
 
-** How to use **
+
+## 相关技术
+
+~~支付：PaysApi~~
+
+内容存储：mysql
+
+图片存储：阿里云对象存储oss
+
+邮箱注册: flask_email 
+
+邮箱验证码：redis
+
+celery email task
+
+
+## ** How to use **
 ```bash
 # 1.克隆到本地
 git clone ...
@@ -27,8 +34,10 @@ git clone ...
 # 2.安装依赖
 pip install -r requirements.txt
 ```
-[pip安装MarkupSafe==1.0失败解决过程 ](https://blog.csdn.net/h106140873/article/details/104794744/)
+[pip安装MarkupSafe==1.0失败解决 ](https://blog.csdn.net/h106140873/article/details/104794744/)
+
 3.安装mysql以及redis并启动。
+
 4.修改config.py中的配置。将有关的变量写入环境变量。
 
 ```bash
@@ -37,6 +46,7 @@ python manage.py db migrate
 ```
 [如果遇到数据库迁移错误](https://stackoverflow.com/questions/32798937/cant-migrate-or-upgrade-database-with-flask-migrate-alembic)
 do this:
+
 ```bash
 python manage.py db stamp head
 python manage.py db migrate
