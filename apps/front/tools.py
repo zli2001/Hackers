@@ -77,10 +77,13 @@ def JsonPosts(posts_obj,en):
                 time, 'cover': cover, 'id': post.id, 'avatar': post.author.avatar, 'hight_light': hight,
                           'user_id': post.author.id})
         else:
-            posts.append({'title': post.title, 'content': content, 'username': post.author.nickname, 'create_time':
-                time, 'cover': cover, 'id': post.id, 'avatar': post.author.avatar, 'hight_light': hight,
-                          'user_id': post.author.id,'nickname':post.author.nickname,'email':post.author.email,'read_count':
-                              post.read_count,'comment_count':len(post.comments)})
+            try:
+                posts.append({'title': post.title, 'content': content, 'username': post.author.nickname, 'create_time':
+                    time, 'cover': cover, 'id': post.id, 'avatar': post.author.avatar, 'hight_light': hight,
+                              'user_id': post.author.id,'nickname':post.author.nickname,'email':post.author.email,'read_count':
+                                  post.read_count,'comment_count':len(post.comments)})
+            except AttributeError:
+                print(AttributeError)
     return posts
 
 

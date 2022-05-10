@@ -213,7 +213,7 @@ CREATE TABLE `banner` (
 
 LOCK TABLES `banner` WRITE;
 /*!40000 ALTER TABLE `banner` DISABLE KEYS */;
-INSERT INTO `banner` VALUES (1,'donghao',2,'https://donghaocms.oss-cn-beijing.aliyuncs.com/20180915183301timg.jpg','https://www.baidu.com','Dohoom站点','2018-09-06 20:27:11'),(7,'donghao',1,'https://donghaocms.oss-cn-beijing.aliyuncs.com/20180915180030we.jpg','www.baidu.com','Dohoom站点','2018-09-15 18:00:43'),(8,'donghao',2,'https://donghaocms.oss-cn-beijing.aliyuncs.com/20180924171444timg.jpg','www.baidu.com','Dohoom站点','2018-09-15 18:01:11');
+INSERT INTO `banner` VALUES (1,'donghao',2,'https://donghaocms.oss-cn-beijing.aliyuncs.com/20180915183301timg.jpg','https://www.baidu.com','Hackers站点','2018-09-06 20:27:11'),(7,'donghao',1,'https://donghaocms.oss-cn-beijing.aliyuncs.com/20180915180030we.jpg','www.baidu.com','Dohoom站点','2018-09-15 18:00:43'),(8,'donghao',2,'https://donghaocms.oss-cn-beijing.aliyuncs.com/20180924171444timg.jpg','www.baidu.com','Dohoom站点','2018-09-15 18:01:11');
 /*!40000 ALTER TABLE `banner` ENABLE KEYS */;
 UNLOCK TABLES;
 

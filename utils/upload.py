@@ -2,17 +2,22 @@
 import oss2
 import os, sys
 from datetime import datetime
-auth = oss2.Auth('xxx','xxx')
+import config
+auth = oss2.Auth(config.ALIYUN_OSS_ID,config.ALIYUN_OSS_SECRET)
 
-bucket = oss2.Bucket(auth,'oss-cn-beijing.aliyuncs.com','donghaocms')
+bucket = oss2.Bucket(auth,'oss-cn-hangzhou.aliyuncs.com','flask-cms')
 
 
-base_posts_url = 'https://donghaocms.oss-cn-beijing.aliyuncs.com/posts/'
-base_avater_url = 'https://donghaocms.oss-cn-beijing.aliyuncs.com/avater/'
-base_groups_url = 'https://donghaocms.oss-cn-beijing.aliyuncs.com/groups/'
-base_images_url = 'https://donghaocms.oss-cn-beijing.aliyuncs.com/images/'
+# 地址前缀
+url_pre = config.URL_PREFIX #ECS 的经典网络访问（内网）
 
-bucket_post = oss2.Bucket(auth,'oss-cn-beijing.aliyuncs.com','donghaocms')
+base_posts_url = url_pre+'posts/'
+base_avater_url = url_pre+'avater/'
+base_groups_url = url_pre+'groups/'
+base_images_url = url_pre+'images/'
+
+bucket_post = oss2.Bucket(auth,'oss-cn-hangzhou.aliyuncs.com','flask-cms')
+
 
 
 

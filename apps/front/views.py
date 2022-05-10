@@ -110,16 +110,21 @@ def wx_get_posts():
     return restful.success(data=posts)
 
 
+
+
+
 @bp.route('/',methods=['GET','POST'])
 def index():
     if request.method == 'GET':
         ads = AdvertisementModel.query.all()
         banners = BannerModel.query.order_by(BannerModel.weight.desc()).all()
         users = FrontUserModel.query.order_by(FrontUserModel.charactors.desc()).all()
-        user = g.front_user
+        try:
+            user = g.front_user
+        except AttributeError:
+            user=''
         if user and user.is_active==0:
             return redirect(url_for('front.login'))
-
         return render_template('front/index.html',banners=banners,users=users,ads=ads)
     else:
         index = int(request.form.get('count'))
@@ -356,7 +361,7 @@ def dpost():
     if post:
         [db.session.delete(c) for c in CommentModel.query.filter_by(post_id = post_id).all()]
         [db.session.delete(c) for c in CollectModel.query.filter_by(post_id = post_id).all()]
-        imgs = re.findall(r'<img src="https://donghaocms.oss-cn-beijing.aliyuncs.com/(.*?)"', post.content, re.S)
+        imgs = re.findall(r'<img src="flask-cms.oss-cn-hangzhou.aliyuncs.com/(.*?)"', post.content, re.S)
         if len(imgs) > 0:
             [bucket.delete_object(img) for img in imgs]
         db.session.delete(post)

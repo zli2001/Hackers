@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="相关功能完善" />
+    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/admin/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/album/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/album/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/front/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/front/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/front/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/front/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/front/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/front/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/groups/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/groups/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/layui/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/groups/create_group.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/groups/create_group.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/test.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/upload.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +93,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -268,7 +293,7 @@
       <recent name="E:\pycharm_pro\mycms\static\common\js" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.manage">
+  <component name="RunManager" selected="Python.mycms">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mycms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -313,7 +338,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mycms" type="PythonConfigurationType" factoryName="Python" singleton="true">
+    <configuration name="mycms" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
       <module name="mycms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -411,11 +436,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mycms" />
         <item itemvalue="Python.manage" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.views" />
         <item itemvalue="Python.translate" />
-        <item itemvalue="Python.mychache" />
       </list>
     </recent_temporary>
   </component>
@@ -433,7 +458,10 @@
       <workItem from="1651922537121" duration="8575000" />
       <workItem from="1652083318963" duration="1460000" />
       <workItem from="1652084815119" duration="5815000" />
-      <workItem from="1652094142586" duration="1898000" />
+      <workItem from="1652094142586" duration="2695000" />
+      <workItem from="1652097171736" duration="17794000" />
+      <workItem from="1652158208933" duration="1748000" />
+      <workItem from="1652160514387" duration="3343000" />
     </task>
     <task id="LOCAL-00001" summary="cms登录，修改密码，banner界面布局完成，mongodb配置完成">
       <created>1535255722571</created>
@@ -526,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539093235828</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="first commit">
+      <created>1652096404292</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1652096404292</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -608,7 +643,8 @@
     <MESSAGE value="前台功能基本完全实现" />
     <MESSAGE value="私信功能完成，以及相关功能完善，代码优化" />
     <MESSAGE value="相关功能完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="相关功能完善" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -658,23 +694,44 @@
           <line>22</line>
           <option name="timeStamp" value="103" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/admin/views.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/front/views.py</url>
+          <line>363</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/static/front/login/js/common.js</url>
           <line>1</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="form.validate()" language="Python" />
         <watch expression="Message(prefix,sender=app.config['FLASKY_MAIL_SENDER'],recipients=[to],body=body)" language="Python" />
+        <watch expression="g.front_user" language="Python" />
+        <watch expression="user.check_pwd(password)" language="Python" />
+        <watch expression="config.ALIYUN_OSS_ID" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/myflask$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652096100469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myflask$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652105867516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flaskcms$mycms.coverage" NAME="mycms Coverage Results" MODIFIED="1651925924552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/myflask$mycms.coverage" NAME="mycms Coverage Results" MODIFIED="1652163885160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flaskcms$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652085473661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">

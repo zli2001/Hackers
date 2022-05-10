@@ -2,7 +2,7 @@ from exct import db
 from datetime import datetime
 from werkzeug.security import generate_password_hash,check_password_hash
 import shortuuid
-
+import config
 class FrontUserModel(db.Model):
     __tablename__ = 'front_user'
     id = db.Column(db.String(100),primary_key=True,default=shortuuid.uuid)
@@ -11,7 +11,7 @@ class FrontUserModel(db.Model):
     email = db.Column(db.String(50),unique=True,nullable=False)
     telephone = db.Column(db.String(11))
     qq = db.Column(db.String(20),default='未填写')
-    avatar = db.Column(db.String(300),default='https://donghaocms.oss-cn-beijing.aliyuncs.com/avater/default.jpg')
+    avatar = db.Column(db.String(300),default=config.URL_PREFIX+'avater/default.png')
     old_avater = db.Column(db.String(300))
     my_web = db.Column(db.String(100))
     address = db.Column(db.String(150))

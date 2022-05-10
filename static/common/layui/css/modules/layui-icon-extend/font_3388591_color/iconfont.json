@@ -1,0 +1,72 @@
+{
+  "id": "3388591",
+  "name": "layui-extend-flask",
+  "font_family": "iconfont",
+  "css_prefix_text": "layui-extend-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "29404664",
+      "name": "粉色甜甜圈",
+      "font_class": "fensetiantianquan",
+      "unicode": "e6d9",
+      "unicode_decimal": 59097
+    },
+    {
+      "icon_id": "29404665",
+      "name": "杰姆甜甜圈",
+      "font_class": "jiemutiantianquan",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    },
+    {
+      "icon_id": "29404666",
+      "name": "草莓甜甜圈",
+      "font_class": "caomeitiantianquan",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    },
+    {
+      "icon_id": "29404667",
+      "name": "巧克力甜甜圈",
+      "font_class": "qiaokelitiantianquan",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
+      "icon_id": "29404668",
+      "name": "榴莲甜甜圈",
+      "font_class": "liuliantiantianquan",
+      "unicode": "e6dd",
+      "unicode_decimal": 59101
+    },
+    {
+      "icon_id": "29404669",
+      "name": "瓜仁甜甜圈",
+      "font_class": "guarentiantianquan",
+      "unicode": "e6de",
+      "unicode_decimal": 59102
+    },
+    {
+      "icon_id": "29404670",
+      "name": "黄桃甜甜圈",
+      "font_class": "huangtaotiantianquan",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
+      "icon_id": "29404671",
+      "name": "碎片甜甜圈",
+      "font_class": "suipiantiantianquan",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "29404672",
+      "name": "巧克力豆甜甜圈",
+      "font_class": "qiaokelidoutiantianquan",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    }
+  ]
+}

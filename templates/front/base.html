@@ -10,6 +10,18 @@
     <link rel="stylesheet" href="{{ static("front/css/index.css") }}">
 	<link rel="stylesheet" type="text/css" href="{{ static("front/login/css/index.css") }}">
     <link rel="stylesheet" href="{{ static("front/css/media.css") }}">
+    <link rel="stylesheet" href=>
+    <script src="{{ static("common/layui/css/modules/layui-icon-extend/iconfont.js") }}"></script>
+    <style>
+        .icon{
+          width: 1em;
+          height: 1em;
+            font-size: 20px;
+          vertical-align: -0.15em;
+          fill: currentColor;
+          overflow: hidden;
+        }
+    </style>
     {% block head %}{% endblock %}
 </head>
 {% if g.front_user %}
@@ -50,7 +62,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class=""><a href="{{ url_for("front.index") }}"><i style="color: #9ce150"  class="layui-icon layui-icon-find-fill"></i>&nbsp;发现</a></li>
+        <li class=""><a href="{{ url_for("front.index") }}"><svg  class="icon" aria-hidden="true">
+            <use xlink:href="#layui-extend-fensetiantianquan"></use></svg >发现</a></li>
           <li class=""><a href="{{ url_for("group.index") }}"><i style="color: #e0e149" class="layui-icon layui-icon-group"></i>&nbsp;小组</a></li>
         <li class=""><a href="{{ url_for("album.index") }}"><i style="color: #8a9ffb" class="layui-icon layui-icon-picture"></i>&nbsp;相册</a></li>
           {% if g.front_user %}
@@ -113,10 +126,9 @@
 
 {% endblock %}
     <footer id="footer_group">
-            © 2017－2018 donghao.club, all rights reserved
-            备案号：<a>渝ICP备18003783号</a><br>
-            站长邮箱：<a>1417766861@qq.com</a><br>
-            地址：Nanyang institute of Technology 中国 河南 南阳市长江路80号
+
+            站长邮箱：<a>782993095@qq.com</a><br>
+
     </footer>
 </body>
 </html>

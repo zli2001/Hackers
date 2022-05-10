@@ -21,9 +21,6 @@ from utils import my_bar
 REMOTE_HOST = "https://pyecharts.github.io/assets/js"
 bp = Blueprint('cms',__name__,url_prefix='/cms')
 
-
-
-
 @bp.route('/index/')
 @login_required
 def index():
@@ -159,7 +156,7 @@ def banners():
         if form.validate():
             banners_id = request.form.get('banner_id')
             banner = BannerModel.query.get(banners_id)
-            url = banner.img_url.split('https://donghaocms.oss-cn-beijing.aliyuncs.com/')
+            url = banner.img_url.split(config.URL_PREFIX)
             if len(url) > 1:
                 bucket.delete_object(url[1])
             db.session.delete(banner)
@@ -177,7 +174,7 @@ def upload():
     file = request.files['file']
     file_name = secure_filename(change_filename(file.filename))
     bucket.put_object(file_name,file)
-    alibase = 'https://donghaocms.oss-cn-beijing.aliyuncs.com/'
+    alibase = config.URL_PREFIX
     return restful.success(data=alibase+file_name)
 
 
@@ -209,7 +206,7 @@ def posts():
     else:
         post_id = request.form.get('post_id')
         post = PostsModel.query.get(post_id)
-        imgs = re.findall(r'<img src="https://donghaocms.oss-cn-beijing.aliyuncs.com/(.*?)"',post.content,re.S)
+        imgs = re.findall(r'<img src="https://flask-cms.oss-cn-hangzhou.aliyuncs.com(.*?)"',post.content,re.S)
         if len(imgs)>0:
             [bucket.delete_object(img) for img in imgs]
         db.session.delete(post)
@@ -226,7 +223,7 @@ def post_large_del():
         posts_ids = post_ids.split(',')
         for po in posts_ids:
             post = PostsModel.query.get(po)
-            imgs = re.findall(r'<img src="https://donghaocms.oss-cn-beijing.aliyuncs.com/(.*?)"', post.content, re.S)
+            imgs = re.findall(r'<img src="https://flask-cms.oss-cn-hangzhou.aliyuncs.com/(.*?)"', post.content, re.S)
             if len(imgs) > 0:
                 [bucket.delete_object(img) for img in imgs]
             db.session.delete(post)
@@ -324,7 +321,7 @@ def img_large_del():
         for id in img_ids:
             album = AlbumModel.query.get(id)
             for img in album.images:
-                url = img.url.split('https://donghaocms.oss-cn-beijing.aliyuncs.com/')[1]
+                url = img.url.split(config.URL_PREFIX)[1]
                 bucket.delete_object(url)
                 db.session.delete(img)
             db.session.delete(album)
@@ -390,7 +387,7 @@ def del_ad():
     ad_id = request.form.get('ad_id')
     if ad_id:
         ad = AdvertisementModel.query.get(ad_id)
-        url = ad.img_url.split('https://donghaocms.oss-cn-beijing.aliyuncs.com/')
+        url = ad.img_url.split(config.URL_PREFIX)
         if len(url)>1:
             bucket.delete_object(url[1])
         db.session.delete(ad)

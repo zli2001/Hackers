@@ -299,7 +299,8 @@ def drop_img():
     img_id = request.form.get('img_id')
     img = ImagesModel.query.get(img_id)
     if img and img.album.author == g.front_user:
-        url = img.url.split('https://donghaocms.oss-cn-beijing.aliyuncs.com/')[1]
+        #url = img.url.split('https://donghaocms.oss-cn-beijing.aliyuncs.com/')[1]
+        url = img.url.split(config.URL_PREFIX)[1]
         db.session.delete(img)
         db.session.commit()
         bucket.delete_object(url)
