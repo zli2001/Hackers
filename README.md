@@ -2,7 +2,7 @@
 
 
 ## TODO:
-- [ ] 删除支付页面
+- [x] 删除支付页面
 - [ ] 更换图标
 - [ ] 上传图片数据
 - [ ] 插入本地数据
@@ -63,7 +63,6 @@ python manage.py add_cms_user -u your_username -p your_passowrd -e your_email
 
 #快捷创建前端用户
 python manage.py add_front_user -u your_username -p your_passowrd -e your_email
-
 
 # 启动
 python manage.py runserver

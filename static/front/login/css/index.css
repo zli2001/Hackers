@@ -76,7 +76,7 @@ body{	font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Ari
 #loginModal .modal-body{height:263px}
 #loginModal #btnRegister{color:#ff9600}
 #loginModal .tips-error{padding:2px 10px;margin-top:10px;display:none}
-#loginModal .globalLogin{height:47px;background:#01c26f;color:#fff;font-size:14px;background:-webkit-linear-gradient(#1fd783,#1fd06b);background:-o-linear-gradient(#1fd783,#1fd06b);background:-moz-linear-gradient(#1fd783,#1fd06b);background:linear-gradient(#1fd783,#1fd06b)}
+#loginModal .globalLogin{height:47px;background: #000000;color:#fff;font-size:14px;background:-webkit-linear-gradient(#474242, #636a64);background:-o-linear-gradient(#1fd783,#1fd06b);background:-moz-linear-gradient(#1fd783,#1fd06b);background:linear-gradient(#1fd783,#1fd06b)}
 #loginModal .threeLogin{position:absolute;left:30px;bottom:15px}
 #loginModal .threeLogin span{color:#b3c3c0;float:left;font-size:14px}
 #loginModal .threeLogin a{display:inline-block;width:20px;height:20px;background:url(../images/login_img.png) no-repeat;vertical-align:middle;margin-left:15px;cursor:pointer}
@@ -92,9 +92,10 @@ body{	font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Ari
 .v5-input-txt #id_mobile_code_f{width:170px;border-radius:0;margin-right:24px}
 .v5-input-txt .send-verify{width:144px;height:42px;line-height:30px;background:#5ecfb5;color:#fff;text-align:center;padding:0;cursor:pointer;border:0}
 .v5-input-txt .btn{padding-bottom:8px;padding-top:8px}
-.btn{background:#5ecfba;border-color:#5ecfba;color:#fff}
-.btn-micv5{background-color:#5ecfba;color:#fff;padding:8px 12px}
-.modal-header{color:#5ecfba}
+.btn{background: #462352;border-color: #2c144b;color:#fff}
+.btn-micv5{background-color: #330c3b;color:#fff;padding:8px 12px}
+.modal-header{color: #000000
+}
 .tips-box{width:100%;display:inline-block;position:relative}
 .tips{position:absolute;left:0;top:-40px;color:#fff;font-size:12px;line-height:32px;background-color:#ff9600;border-radius:100px;padding:0 15px;box-sizing:border-box}
 .tips:after{content:'';position:absolute;bottom:-12px;left:25px;border-top:6px solid #ff9600;border-right:4px solid transparent;border-bottom:6px solid transparent;border-left:4px solid transparent}

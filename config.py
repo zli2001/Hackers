@@ -48,3 +48,7 @@ CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
 ALIYUN_OSS_ID = os.environ.get('ALIYUN_OSS_ID')
 ALIYUN_OSS_SECRET = os.environ.get('ALIYUN_OSS_SECRET')
 URL_PREFIX = 'https://flask-cms.oss-cn-hangzhou.aliyuncs.com/'# 外网访问
+
+# github登录
+GITHUB_CLIENT_ID = os.environ.get('GITHUB_CLIENT_ID')
+GITHUB_CLIENT_SECRET = os.environ.get('GITHUB_CLIENT_SECRET')

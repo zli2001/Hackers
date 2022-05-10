@@ -28,7 +28,7 @@
             <div class="col-left"></div>
             <div class="col-right">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="loginModalLabel" style="font-size: 18px;">登录</h4>
+                    <h4 class="modal-title" id="loginModalLabel" style="font-size: 18px;color: #8870a9">登录</h4>
                 </div>
                 <div class="modal-body">
                     <section class="box-login v5-input-txt" id="box-login">
@@ -43,9 +43,12 @@
                         <div class="login-box marginB10">
                             <button id="login_btn-1" type="button" class="btn btn-micv5 btn-block globalLogin">登录</button>
                         </div>
-                        <div style="padding-bottom: 10px">三方登录：</div>
+                        <div style="padding-bottom: 10px">第三方登录：</div>
                         <a class="ui circular red big weibo icon button" href="{{ url_for("front.weibo_login") }}">
                           <i class="weibo icon"></i>
+                        </a>
+                        <a class="ui circular black big github icon button" href="{{ url_for("front.github_login") }}">
+                          <i class="github icon"></i>
                         </a>
                   
                     </section>

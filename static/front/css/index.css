@@ -167,8 +167,13 @@ input[type="checkbox"] {
 
 
 #左侧选项栏位
-.bord-set{overflow: hidden;}
-.bord-set li{width: 100%;height: 50px;border-radius:5px;color: white;}
+.bord-set{overflow: hidden;
+
+}
+
+.bord-set li{width: 100%;height: 50px;border-radius:5px;color: white;
+
+}
 .padding-top{margin-top: 18px}
 .board-name{color: white;}
 .board-name span{font-size: 18px;margin-left: 20px;display: block;padding-top: 13px}

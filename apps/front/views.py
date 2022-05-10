@@ -1027,6 +1027,68 @@ def weibo_login():
     url = weibo.authorize_url+'?client_id={client_id}&redirect_uri={redirect_uri}'.format(client_id=weibo.client_id,redirect_uri=weibo.redirect_uri)
     return redirect(url)
 
+from exct import github
+import urllib.parse
+@bp.route('/github_login/')
+def github_login():
+    q_string = urllib.parse.urlencode({
+        "client_id": config.GITHUB_CLIENT_ID,
+        "redirect_uri": 'http://127.0.0.1:5000/callback/github'
+    })
+
+    # 组装授权申请地址
+    oauth_url = "https://github.com/login/oauth/" + "/authorize?" + q_string
+    return redirect(oauth_url)
+
+@bp.route('/callback/github')
+@github.authorized_handler
+def authorized(access_token):
+    token_url ="https://github.com/login/oauth/" + "/access_token"
+    # 获取授权码
+    auth_code = request.args.get("code")
+    params = {
+        "client_id": config.GITHUB_CLIENT_ID,
+        "client_secret": config.GITHUB_CLIENT_SECRET,
+        "code": auth_code
+    }
+    headers = {
+        "accept": "application/json",
+    }
+    # 请求令牌
+    res = requests.post(token_url, params=params, headers=headers)
+    # 获取令牌
+    token = res.json().get("access_token")
+    # 带上令牌
+    headers["Authorization"] = "token " + token
+    # 获取用户信息, API 地址为 https://api.github.com/user
+    res = requests.get("https://api.github.com/user", headers=headers)
+
+    return f"<h3>{res.json().get('name')}</h3>"
+
+    """
+    if access_token is None:
+        flash('Login failed.')
+        return redirect(url_for('index'))
+
+    response = github.get('user', access_token=access_token)
+    uid = response['login']  # get id
+    user = FrontUserModel.query.filter_by(github_id=uid).first()
+    if user is not None:
+        session[config.FRONT_USER_ID] = user.id
+        return redirect(url_for('front.index'))
+    if uid:
+        user = FrontUserModel(github_id=uid, access_token=access_token)
+        db.session.add(user)
+    user.access_token = access_token  # update access token
+    db.session.commit()
+
+    flash('Login success.')
+    # log the user in
+    # if you use flask-login, just call login_user() here.
+    return redirect(url_for('front.index'))
+    """
+
+
 
 from urllib import parse
 @bp.route('/share/')
@@ -1046,36 +1108,6 @@ def share():
 def test():
     return render_template('test.html')
 
-
-import shortuuid
-from hashlib import md5
-
-@bp.route('/sopprt/',methods=['POST','GET'])
-def sopprt():
-    if request.method == 'GET':
-        uid = '2bebf6aa88b05029032d3d93'
-        notify_url = 'http://127.0.0.1/reutrn_alipay/'
-        return_url = 'http://127.0.0.1/sopprt/'
-        orderid = str(shortuuid.uuid())
-        orderuid = '1417766861'
-        goodsname = '支持我'
-        context = {
-            'uid':uid,'notify_url':notify_url,'return_url':return_url,'orderid':orderid,'orderuid':orderuid,'goodsname':goodsname,
-        }
-        return render_template('front/sopprt.html',**context)
-    else:
-        token = '6c0c5502dc1f9c75bd52f651a8d6c500'
-        uid = '2bebf6aa88b05029032d3d93'
-        goodsname = request.form.get('goodsname')
-        istype = request.form.get('istype')
-        notify_url = request.form.get('notify_url')
-        return_url = request.form.get('return_url')
-        orderuid = request.form.get('orderuid')
-        orderid = request.form.get('orderid')
-        price = request.form.get('price')
-        key = md5((goodsname + istype + notify_url + orderid + orderuid + price + return_url + token + uid).encode(
-        "utf-8")).hexdigest()
-        return restful.success(data=key)
 
 
 

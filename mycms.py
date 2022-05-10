@@ -8,7 +8,7 @@ from apps.album import bp as album_bp
 
 
 import config
-from exct import db,mail
+from exct import db,mail,github
 from flask import Flask,render_template
 
 from flask_wtf.csrf import CSRFProtect
@@ -27,6 +27,7 @@ def create_app():
     csrf.init_app(app)
     db.init_app(app)
     mail.init_app(app)
+    github.init_app(app)
     return app
 
 app = create_app()
