@@ -1,6 +1,6 @@
 {% from "common/_macro.html" import static %}
 <html>
-<head>
+<head >
     <title>注册</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" type="text/css" href="{{ static("front/login/css/index.css") }}">
@@ -14,25 +14,33 @@
     <script type="text/javascript" src="{{ static("front/login/js/common.js") }}"></script>
 	<script type="text/javascript" src="{{ static("front/login/js/login.js") }}"></script>
     <script src="{{ static("front/js/signup.js")}}"></script>
+<style type="text/css">
+    .form-control ,#send-capcha{
+        background:#26123d ;
+        color: #d7d1d6;
+    }
+
+
+</style>
 </head>
-<body style="background: snow">
+<body  style="background: #02082a">
 <div class="main_contener">
     <div class="col-md-4">
     </div>
      <div class="col-md-4">
 {#         <span id="return_to_span">{{ return_to }}</span>#}
          <div class="siup_in_title">
-             <a href="{{ url_for("front.index") }}"><img src="{{ static("front/images/blogin.png") }}" alt=""></a>
+     <a href="{{ url_for("front.index") }}"><img src="{{ static("front/images/blogin.png") }}" alt=""></a>
          </div>
-        <div class="modal-content" style="border: none;">
+        <div class="modal-content" style="border: none;background: #28133e">
             <div class="col-left"></div>
             <div class="col-right">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="loginModalLabel" style="font-size: 18px;">注册</h4>
+                    <h4 class="modal-title" id="loginModalLabel" style="font-size: 18px; color: #ab90d0">注册</h4>
                 </div>
-                <div class="modal-body">
-                    <section class="box-login v5-input-txt" id="box-login">
-                        <ul>
+                <div class="modal-body" style="color: #d7d1d6">
+                    <section class="box-login v5-input-txt" id="box-login" >
+                        <ul style="background:#26123d">
                             <li class="form-group">邮箱：
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="email" placeholder="邮箱号码">
@@ -51,9 +59,9 @@
                                                           placeholder="请输入确认密码" type="password"></li>
                         </ul>
                         <p class="good-tips marginB10">已有账号？<a
-                                 href="{{ url_for("front.login") }}" >立即登陆</a></p>
+                                 href="{{ url_for("front.login") }}" style="color:white " >立即登陆</a></p>
                         <div class="login-box marginB10">
-                            <button  type="button" class="btn btn-micv5 btn-block globalLogin" id="signup-now">注册</button>
+                            <button  type="button" class="btn btn-micv5 btn-block globalLogin" id="signup-now" style="color: #fff9fe;background-color: #8870a9">注册</button>
                         </div>
                     </section>
                 </div>

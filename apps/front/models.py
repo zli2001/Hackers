@@ -24,7 +24,7 @@ class FrontUserModel(db.Model):
     realname = db.Column(db.String(100),default='未填写')
     charactors = db.Column(db.Integer,default=0)
     is_active = db.Column(db.Integer,default=1)
-    color = db.Column(db.String(20),default='#ffffff')
+    color = db.Column(db.String(20),default='#02082a')
 
     def __init__(self,*args,**kwargs):
         if 'password' in kwargs:

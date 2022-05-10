@@ -34,7 +34,7 @@ git clone ...
 # 2.安装依赖
 pip install -r requirements.txt
 ```
-[pip安装MarkupSafe==1.0失败解决 ](https://blog.csdn.net/h106140873/article/details/104794744/)
+[pip安装MarkupSafe==1.0失败解决方案](https://blog.csdn.net/h106140873/article/details/104794744/)
 
 3.安装mysql以及redis并启动。
 
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 # 5.数据库迁移
 python manage.py db migrate
 ```
-[如果遇到数据库迁移错误](https://stackoverflow.com/questions/32798937/cant-migrate-or-upgrade-database-with-flask-migrate-alembic)
+如果遇到[数据库迁移错误](https://stackoverflow.com/questions/32798937/cant-migrate-or-upgrade-database-with-flask-migrate-alembic)
 do this:
 
 ```bash

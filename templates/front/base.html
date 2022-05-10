@@ -13,6 +13,13 @@
     <link rel="stylesheet" href=>
     <script src="{{ static("common/layui/css/modules/layui-icon-extend/iconfont.js") }}"></script>
     <style>
+        .nav navbar-nav a{
+
+            color: white;
+        }
+        li a{
+             color: white;
+        }
         .icon{
           width: 1em;
           height: 1em;
@@ -29,7 +36,7 @@
     <span id="mycolo" style="display: none;">{{ g.front_user.color }}</span>
     <nav class="navbar navbar-default bg" style="background-color: {{ g.front_user.color }}">
     {% else %}
-<body class="bg">
+<body class="bg" style="background-color:#1d1239">
 <nav class="navbar navbar-default bg" style="border-top: 0px;">
 {% endif %}
 <script>
@@ -46,7 +53,7 @@
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
-  <div class="container-fluid">
+  <div class="container-fluid" style="background: #1d1239;color: white">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -62,10 +69,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class=""><a href="{{ url_for("front.index") }}"><svg  class="icon" aria-hidden="true">
+        <li class=""><a href="{{ url_for("front.index") }}" style="color: white"><svg  class="icon" aria-hidden="true">
             <use xlink:href="#layui-extend-fensetiantianquan"></use></svg >发现</a></li>
-          <li class=""><a href="{{ url_for("group.index") }}"><i style="color: #e0e149" class="layui-icon layui-icon-group"></i>&nbsp;小组</a></li>
-        <li class=""><a href="{{ url_for("album.index") }}"><i style="color: #8a9ffb" class="layui-icon layui-icon-picture"></i>&nbsp;相册</a></li>
+          <li class=""><a href="{{ url_for("group.index") }}" style="color: white"><i style="color: #e0e149" class="layui-icon layui-icon-group"></i>&nbsp;小组</a></li>
+        <li class=""><a href="{{ url_for("album.index") }}" style="color: white"><i style="color: #8a9ffb" class="layui-icon layui-icon-picture"></i>&nbsp;相册</a></li>
           {% if g.front_user %}
                   <li class=""><a href="{{ url_for("front.chat",user_id = g.front_user.id) }}"><i style="color: #e188a8;font-size: 15px" class="mail icon"></i>&nbsp;私信</a></li>
           {% endif %}
@@ -75,17 +82,17 @@
       </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="{{ url_for("front.search") }}">
+                    <a href="{{ url_for("front.search") }}" style="color: white">
                     <span style="color: #eebce5" class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;搜索
                 </a></li>
-                <li><a href="{{ url_for("front.apost") }}">
+                <li><a href="{{ url_for("front.apost") }}" style="color: white">
                     <span style="color: #8d89ee" class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp;发帖
                 </a></li>
                 {% if g.front_user %}
-                    <li><a id="element_id">
+                    <li><a id="element_id" style="color: white">
                     <i class="dashboard icon"></i>&nbsp;&nbsp;主题
                 </a></li>
-                           <li><a href="{{ url_for("front.information") }}#">
+                           <li><a href="{{ url_for("front.information") }}#" style="color: white">
                     <span class="glyphicon glyphicon-bell" style="color: #e16b60"></span>&nbsp;&nbsp;消息
                 </a></li>
                     <span style="display: none;" data-login-user="1" id="login-span"></span>
@@ -96,16 +103,16 @@
                              class="profile_img">
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ url_for("front.apost") }}">&nbsp;&nbsp;发布</a></li>
-                        <li><a href="{{ url_for("front.u",user_id=g.front_user.id) }}">&nbsp;&nbsp;我的主页</a></li>
+                        <li><a href="{{ url_for("front.apost") }}" style="color: white">&nbsp;&nbsp;发布</a></li>
+                        <li><a href="{{ url_for("front.u",user_id=g.front_user.id) }}" style="color: white">&nbsp;&nbsp;我的主页</a></li>
                         <li><a href="{{ url_for("front.setting_base") }}">&nbsp;&nbsp;设置</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="{{ url_for("front.logout") }}">&nbsp;&nbsp;退出</a></li>
                     </ul>
                 </li>
                     {% else %}
-                                    <li><a href="{{ url_for("front.login") }}"><span>登录</span></a></li>
-                                    <li><a href="{{ url_for("front.signup") }}"><span>注册</span></a></li>
+                                    <li><a href="{{ url_for("front.login") }}" ><span style=" color: white;">登录</span></a></li>
+                                    <li><a href="{{ url_for("front.signup") }}"><span style=" color: white;">注册</span></a></li>
                     {% endif %}
             <li>
               <select  id="language" class="form-control"  style="float:right;margin-bottom: 10px;margin-top: 15px;">

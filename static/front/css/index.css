@@ -1,4 +1,6 @@
-﻿
+﻿.body{
+    background: #02082a;
+}
 .navbar-default{
 border-top: 0;
     background-color: white;

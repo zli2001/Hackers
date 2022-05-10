@@ -15,39 +15,39 @@
     <script type="text/javascript" src="{{ static("front/login/js/common.js") }}"></script>
 	<script type="text/javascript" src="{{ static("front/login/js/login.js") }}"></script>
 </head>
-<body style="background: snow">
+<body style="background: #02082a">
 <div class="main_contener">
     <div class="col-md-4">
     </div>
      <div class="col-md-4">
          <span style="display: none;" id="return_to_span">{{ return_to }}</span>
          <div class="sign_in_title">
-             <a href="{{ url_for("front.index") }}"><img src="{{ static("front/images/blogin.png") }}" alt=""></a>
+           <a href="{{ url_for("front.index") }}"><img src="{{ static("front/images/blogin.png") }}" alt=""></a>
          </div>
-        <div class="modal-content" style="border: none;">
+        <div class="modal-content" style="border: none;background: #331952">
             <div class="col-left"></div>
             <div class="col-right">
                 <div class="modal-header">
                     <h4 class="modal-title" id="loginModalLabel" style="font-size: 18px;color: #8870a9">登录</h4>
                 </div>
                 <div class="modal-body">
-                    <section class="box-login v5-input-txt" id="box-login">
+                    <section class="box-login v5-input-txt"  id="box-login">
                         <ul>
                             <li class="form-group"><input class="form-control" id="id_account_l" name="email"
-                                                          placeholder="请输入邮箱" type="text"></li>
+                                                          placeholder="请输入邮箱" type="text" style="background:#26123d"></li>
                             <li class="form-group"><input class="form-control" id="id_password_l" name="password"
-                                                          placeholder="请输入密码" type="password"></li>
+                                                          placeholder="请输入密码" type="password" style="background:#26123d"></li>
                         </ul>
-                        <p class="good-tips marginB10"><a href="{{ url_for("front.forgetpwd") }}"  id="btnForgetpsw" class="fr">忘记密码？</a>还没有账号？<a
-                                href="{{ url_for("front.signup") }}" target="_blank" id="btnRegister">立即注册</a></p>
+                        <p class="good-tips marginB10" style="color: #627597"><a href="{{ url_for("front.forgetpwd") }}"  id="btnForgetpsw" class="fr" style="color: rgba(199,197,197,0.93)">忘记密码？</a>还没有账号？<a
+                                href="{{ url_for("front.signup") }}" target="_blank" id="btnRegister" style="color: rgba(199,197,197,0.93)">立即注册</a></p>
                         <div class="login-box marginB10">
-                            <button id="login_btn-1" type="button" class="btn btn-micv5 btn-block globalLogin">登录</button>
+                            <button id="login_btn-1" type="button" class="btn btn-micv5 btn-block globalLogin" style="color: #fff9fe;background-color: #8870a9">登录</button>
                         </div>
-                        <div style="padding-bottom: 10px">第三方登录：</div>
-                        <a class="ui circular red big weibo icon button" href="{{ url_for("front.weibo_login") }}">
+                        <div style="padding-bottom: 10px;color: #627597">第三方登录：</div>
+                        <a class="ui circular dark big weibo icon button" href="{{ url_for("front.weibo_login") }}">
                           <i class="weibo icon"></i>
                         </a>
-                        <a class="ui circular black big github icon button" href="{{ url_for("front.github_login") }}">
+                        <a class="ui circular dark bg big github icon button" href="{{ url_for("front.github_login") }}">
                           <i class="github icon"></i>
                         </a>
                   
