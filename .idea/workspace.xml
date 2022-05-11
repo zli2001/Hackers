@@ -1,18 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="change html and css">
+    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="change color">
+      <change afterPath="$PROJECT_DIR$/static/common/images/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/common/images/xz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/common/images/z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_4vqod9vyzb9/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_4vqod9vyzb9/demo_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_4vqod9vyzb9/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_4vqod9vyzb9/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_4vqod9vyzb9/iconfont.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_4vqod9vyzb9/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_4vqod9vyzb9/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_4vqod9vyzb9/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/front/images/x - 副本.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/front/images/x1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/group/images/group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/group/images/xc_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/front/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/front/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/common/sweetalert/sweetalert.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/sweetalert/sweetalert.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/common/sweetalert/sweetalert.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/sweetalert/sweetalert.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/images/login-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/images/login-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/images/zx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_color/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_color/demo_index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_color/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_color/iconfont.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_color/iconfont.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_color/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_color/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/font_3388591_color/iconfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/layui/css/modules/layui-icon-extend/iconfont.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/front/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/_heads.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/_heads.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/front/css/post_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/post_detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/front/images/QQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/front/images/blogin.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/images/blogin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/front/images/my-qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/front/images/wx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/front/images/x.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/images/x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/front/images/zfb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/group/images/xc.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/group/images/xc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/front/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/forgetpwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/forgetpwd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/groups/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/groups/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,6 +292,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -270,7 +306,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -456,7 +492,10 @@
       <workItem from="1652094142586" duration="2695000" />
       <workItem from="1652097171736" duration="17794000" />
       <workItem from="1652158208933" duration="1748000" />
-      <workItem from="1652160514387" duration="24642000" />
+      <workItem from="1652160514387" duration="24703000" />
+      <workItem from="1652256994077" duration="2995000" />
+      <workItem from="1652260029366" duration="1517000" />
+      <workItem from="1652266842173" duration="8248000" />
     </task>
     <task id="LOCAL-00001" summary="cms登录，修改密码，banner界面布局完成，mongodb配置完成">
       <created>1535255722571</created>
@@ -591,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652185114666</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="change color">
+      <created>1652191275710</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1652191275710</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -660,6 +706,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="cms登录，修改密码，banner界面布局完成，mongodb配置完成" />
     <MESSAGE value="阿里oss配置完成，banner图片上传，文件信息获取完成" />
     <MESSAGE value="banner修改完成，修改上传代码优化" />
@@ -678,7 +725,8 @@
     <MESSAGE value="add gitignore" />
     <MESSAGE value="add readme" />
     <MESSAGE value="change html and css" />
-    <option name="LAST_COMMIT_MESSAGE" value="change html and css" />
+    <MESSAGE value="change color" />
+    <option name="LAST_COMMIT_MESSAGE" value="change color" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -778,7 +826,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/myflask$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652191189693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myflask$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652275500159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flaskcms$mycms.coverage" NAME="mycms Coverage Results" MODIFIED="1651925924552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/myflask$mycms.coverage" NAME="mycms Coverage Results" MODIFIED="1652174794610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flaskcms$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652085473661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

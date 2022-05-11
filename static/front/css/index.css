@@ -67,7 +67,7 @@ border-top: 0;
 .title a{font-size: 18px;font-weight: 600;
     color: #333;text-decoration: none;}
 .author-group{color: #898989;;margin-top: 10px}
-.author-group a{text-decoration: none;color: #3c8dbc;}
+.author-group a{text-decoration: none;color: #b2ddff;}
 .author-group a:hover{color: #9b9fb1}
 .author-group img{width: 30px;height: 30px;border-radius:10%;border: 1px solid #ddd}
 .text{color: #676262;float: left;width: 70%;margin-top: 10px}
@@ -194,11 +194,12 @@ focus-ul{float: left;overflow: hidden}
 .focus-ul li a{float: left;margin-top: 10px;}
 .focus-ul li{float: left;height: 50px;width: 100%}
 .focus-ul li a:hover{color: #b3c3c0}
-.focus-user-name:hover{color: #b3c3c0}
+.focus-user-name:hover{color: #7150d2
+}
 .focus-ul li a img{width: 40px;height: 40px;border-radius: 50%;float: left}
 
 .focus-user-info{float: left;margin-left: 10px}
-.focus-user-name{margin-right: 60px;font-size: 15px;color: #333;font-weight: lighter}
+.focus-user-name{margin-right: 60px;font-size: 15px;color: #efefef;font-weight: lighter}
 .detail{color: #9b9fb1}
 
 .change-author{margin-top: 20px;padding-bottom: 10px;}
@@ -220,7 +221,7 @@ line-height: 60px;text-align: center}
 .co{background-color: #c0d8c0}
 .colle{background-color: #6ee152}
 
-.follow-add{float: right;margin-top: 20px;font-weight: bold;color: #1ee124;font-weight: lighter}
+.follow-add{float: right;margin-top: 20px;font-weight: bold;color: #efa7ef;font-weight: lighter}
 .follow-add:hover{cursor: pointer}
 
 .follow-added{float: right;margin-top: 20px;font-weight: bold;font-weight: lighter;color: #ee7f5c}
@@ -228,7 +229,7 @@ line-height: 60px;text-align: center}
 
 .see_all{width: 100%;}
 
-.change-btn-hot{float: right;font-size: 15px;color: #1ee124;margin-top: 20px}
+.change-btn-hot{float: right;font-size: 15px;color: #f8b3ed;margin-top: 20px}
 .change-btn-hot:hover{cursor: pointer;color: #b2b2b2}
 
 

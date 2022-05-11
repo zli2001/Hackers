@@ -10,34 +10,27 @@
     <link rel="stylesheet" href="{{ static("front/css/index.css") }}">
 	<link rel="stylesheet" type="text/css" href="{{ static("front/login/css/index.css") }}">
     <link rel="stylesheet" href="{{ static("front/css/media.css") }}">
-    <link rel="stylesheet" href=>
+    <link rel="stylesheet" href=" {{static("common/layui/css/modules/layui-icon-extend/iconfont.css") }}">
     <script src="{{ static("common/layui/css/modules/layui-icon-extend/iconfont.js") }}"></script>
     <style>
-        .nav navbar-nav a{
-
+        #bs-example-navbar-collapse-1 a{
+            font-size: 20px;
             color: white;
         }
         li a{
              color: white;
         }
-        .icon{
-          width: 1em;
-          height: 1em;
-            font-size: 20px;
-          vertical-align: -0.15em;
-          fill: currentColor;
-          overflow: hidden;
-        }
+
     </style>
     {% block head %}{% endblock %}
 </head>
 {% if g.front_user %}
 <body class="bg" style="background-color: {{ g.front_user.color }}">
     <span id="mycolo" style="display: none;">{{ g.front_user.color }}</span>
-    <nav class="navbar navbar-default bg" style="background-color: {{ g.front_user.color }}">
+    <nav class="navbar navbar-default bg" style="background-color: {{ g.front_user.color }};border-color:#1d1239 ">
     {% else %}
 <body class="bg" style="background-color:#1d1239">
-<nav class="navbar navbar-default bg" style="border-top: 0px;">
+<nav class="navbar navbar-default bg" style="border-top: 0px;border-color:#1d1239 ">
 {% endif %}
 <script>
 (function(){
@@ -53,7 +46,7 @@
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
-  <div class="container-fluid" style="background: #1d1239;color: white">
+  <div class="container-fluid" style="background: #1d1239;">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -62,38 +55,39 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ url_for("front.index") }}">
-      		<img src="{{ static("front/images/x.png") }}" alt="Logo">
+      <a class="navbar-brand" href="{{ url_for("front.index") }}" style="width: 300px;height:auto;margin-top: -0.5cm">
+      		<img src="{{ static("front/images/x1.png") }}" alt="Logo"
+                 style="width: 240px;height: auto">
       </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color:#1d1239">
       <ul class="nav navbar-nav">
-        <li class=""><a href="{{ url_for("front.index") }}" style="color: white"><svg  class="icon" aria-hidden="true">
-            <use xlink:href="#layui-extend-fensetiantianquan"></use></svg >发现</a></li>
-          <li class=""><a href="{{ url_for("group.index") }}" style="color: white"><i style="color: #e0e149" class="layui-icon layui-icon-group"></i>&nbsp;小组</a></li>
-        <li class=""><a href="{{ url_for("album.index") }}" style="color: white"><i style="color: #8a9ffb" class="layui-icon layui-icon-picture"></i>&nbsp;相册</a></li>
+        <li class=""><a href="{{ url_for("front.index") }}" style="color: white"><i style="color: #bddcde;font-size: 35px" class="iconfont  layui-extend-faxian"></i>首页</a></li>
+          <li class=""><a href="{{ url_for("group.index") }}" style="color: white"><i style="color: #779dcd;font-size: 35px" class="iconfont  layui-extend-qunzu"></i> 社区</a></li>
+        <li class=""><a href="{{ url_for("album.index") }}" style="color: white"><i style="color: #3697af;font-size: 35px" class="iconfont  layui-extend-xuexi"></i> 学习</a></li>
           {% if g.front_user %}
-                  <li class=""><a href="{{ url_for("front.chat",user_id = g.front_user.id) }}"><i style="color: #e188a8;font-size: 15px" class="mail icon"></i>&nbsp;私信</a></li>
+                  <li class=""><a href="{{ url_for("front.chat",user_id = g.front_user.id) }}"><i style="color: #5962b6;font-size: 35px" class="iconfont  layui-extend-youjian"></i> 私信</a></li>
           {% endif %}
         <li class="dropdown">
 
         </li>
       </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" style="border-color: #1d1239">
                 <li>
-                    <a href="{{ url_for("front.search") }}" style="color: white">
-                    <span style="color: #eebce5" class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;搜索
+                    <a href="{{ url_for("front.search") }}" style="color: white;font-size: 20px">
+                    <i style="color: #977cff;font-size: 20px" class="iconfont  layui-extend-sousuoxiao"></i> 搜索
                 </a></li>
                 <li><a href="{{ url_for("front.apost") }}" style="color: white">
-                    <span style="color: #8d89ee" class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp;发帖
+                   <i style="color: #ad4f78;font-size: 20px" class="iconfont  layui-extend-bianji1"></i> 发帖
                 </a></li>
                 {% if g.front_user %}
+                    <!---
                     <li><a id="element_id" style="color: white">
                     <i class="dashboard icon"></i>&nbsp;&nbsp;主题
-                </a></li>
+                </a></li>--->
                            <li><a href="{{ url_for("front.information") }}#" style="color: white">
-                    <span class="glyphicon glyphicon-bell" style="color: #e16b60"></span>&nbsp;&nbsp;消息
+                     <i style="color: #d4a1be;font-size: 20px" class="iconfont  layui-extend-tixing"></i>消息
                 </a></li>
                     <span style="display: none;" data-login-user="1" id="login-span"></span>
                     <li class="dropdown">
@@ -102,12 +96,12 @@
                         <img src="{{ g.front_user.avatar }}" alt=""
                              class="profile_img">
                         <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ url_for("front.apost") }}" style="color: white">&nbsp;&nbsp;发布</a></li>
-                        <li><a href="{{ url_for("front.u",user_id=g.front_user.id) }}" style="color: white">&nbsp;&nbsp;我的主页</a></li>
-                        <li><a href="{{ url_for("front.setting_base") }}">&nbsp;&nbsp;设置</a></li>
+                    <ul class="dropdown-menu" >
+                        <li><a href="{{ url_for("front.apost") }}" style="color: #2E2D3C">&nbsp;&nbsp;发布</a></li>
+                        <li><a href="{{ url_for("front.u",user_id=g.front_user.id) }}" style="color: #2E2D3C">&nbsp;&nbsp;我的主页</a></li>
+                        <li><a href="{{ url_for("front.setting_base") }}" style="color: #2E2D3C">&nbsp;&nbsp;设置</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="{{ url_for("front.logout") }}">&nbsp;&nbsp;退出</a></li>
+                        <li><a href="{{ url_for("front.logout") }}" style="color: #2E2D3C">&nbsp;&nbsp;退出</a></li>
                     </ul>
                 </li>
                     {% else %}

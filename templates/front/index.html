@@ -16,7 +16,15 @@
     <script src="{{ static("front/js/hot_users.js") }}"></script>
     <script src="{{ static("common/layui/lay/modules/layer.js") }}"></script>
     <script src="{{ static("front/js/follow.js") }}"></script>
- 
+ <style>
+  div.text,div.textfill{
+      color: white;
+
+  }
+  a{
+      color: white;
+  }
+ </style>
 
 {% endblock %}
 
@@ -92,7 +100,7 @@
                                 <img v-bind:src="post.cover" v-if="post.cover.length">
                             </div>
                             <div class="content">
-                                <span class="title"><a :href="'/post_detail/'+post.id+'?lang='+language">[[post.title]]</a>
+                                <span class="title"><a :href="'/post_detail/'+post.id+'?lang='+language" style="color: white;">[[post.title]]</a>
                                     <button class="layui-btn layui-btn-xs layui-btn-warm"
                                             v-if="post.hight_light">精</button>
                                 </span>
@@ -141,7 +149,7 @@
          <div id="author" v-cloak>
                 <div class="change-author">
                     <span>推荐作者</span>
-                    <div class="change-btn" v-on:click="changeauthors">
+                    <div class="change-btn" v-on:click="changeauthors" style="color: white">
                         <i class="layui-icon layui-icon-refresh"></i>&nbsp;换一批
                     </div>
                 </div>
@@ -158,7 +166,7 @@
                         {% if g.front_user %}
                             <span style="display: none;" id="now_user" data-user-id="{{ g.front_user.id }}"></span>
                         {% endif %}
-                        <div class="follow-add fow" v-if="user.is_focus_id!==1" v-bind:data-user-id="user.user_id"><i class="layui-icon layui-icon-add-1"></i>关注</div>
+                        <div class="follow-add fow" v-if="user.is_focus_id!==1" v-bind:data-user-id="user.user_id" style="color: "><i class="layui-icon layui-icon-add-1"></i>关注</div>
                         <div class="follow-added fow"  v-else v-bind:data-user-id="user.user_id"><i class="layui-icon layui-icon-ok-circle"></i>取消关注</div>
                     </li>
                 </ul>
@@ -167,7 +175,7 @@
                     <i class="layui-icon mini layui-icon-right"></i>
                 </a>
             </div>
-            <div class="change-btn-hot" id="other-hot">
+            <div class="change-btn-hot" id="other-hot" style="color: white">
                 <i class="layui-icon layui-icon-refresh"></i>&nbsp;换一批热门
             </div>
             <div id="example" style="width: 100%; height: 350px"></div>
