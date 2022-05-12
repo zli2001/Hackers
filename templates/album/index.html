@@ -58,24 +58,24 @@
                 <ul>
                     {% if elit == 1 %}
                         <li class="li-active"><a style="color: #f5f6f6"
-                                                 href="{{ url_for("album.index",elit=1) }}">热门组图</a></li>
+                                                 href="{{ url_for("album.index",elit=1) }}">热门专题</a></li>
                         <li><a href="{{ url_for("album.index",elit=2,tag=tag_name) }}">社区推荐</a></li>
-                        <li><a href="{{ url_for("album.index",elit= 3,tag=tag_name) }}">最新组图</a></li>
+                        <li><a href="{{ url_for("album.index",elit= 3,tag=tag_name) }}">最新专题</a></li>
                     {% elif elit == 2 %}
-                        <li><a href="{{ url_for("album.index",elit=1,tag=tag_name) }}">热门组图</a></li>
+                        <li><a href="{{ url_for("album.index",elit=1,tag=tag_name) }}">热门专题</a></li>
                         <li class="li-active"><a style="color: #f5f6f6"
                                                  href="{{ url_for("album.index",elit=2,tag=tag_name) }}">社区推荐</a></li>
-                        <li><a href="{{ url_for("album.index",elit=3,tag=tag_name) }}">最新组图</a></li>
+                        <li><a href="{{ url_for("album.index",elit=3,tag=tag_name) }}">最新专题</a></li>
                     {% elif elit == 3 %}
-                        <li><a href="{{ url_for("album.index",elit=1,tag=tag_name) }}">热门组图</a></li>
-                        <li><a href="{{ url_for("album.index",elit=2,tag=tag_name) }}">社区推荐</a></li>
+                        <li><a href="{{ url_for("album.index",elit=1,tag=tag_name) }}">热门专题</a></li>
+                        <li><a href="{{ url_for("album.index",elit=2,tag=tag_name) }}">社区专题</a></li>
                         <li class="li-active"><a style="color: #f5f6f6"
-                                                 href="{{ url_for("album.index",elit=3,tag=tag_name) }}">最新组图</a></li>
+                                                 href="{{ url_for("album.index",elit=3,tag=tag_name) }}">最新专题</a></li>
                     {% endif %}
                 </ul>
                 {% if g.front_user %}
                     <div class="create-album">
-                        <a href="{{ url_for("album.my_album",user_id=g.front_user.id) }}">我的相册</a>
+                        <a href="{{ url_for("album.my_album",user_id=g.front_user.id) }}">我的专题</a>
                     </div>
                 {% endif %}
             </div>

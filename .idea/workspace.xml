@@ -2,48 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="改了图标等">
-      <change afterPath="$PROJECT_DIR$/data/new.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/common/images/zx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrequirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/upload_oss/avater/1_qq_15969343.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/upload_oss/avater/5ABqQEnhMzAAdcPM3CPYBQ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/upload_oss/avater/7SWuncBDfghCL9rdFu3NHP.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/cms_base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/css/cms_base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/album/css/album.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/album/css/album.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/album/css/album_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/album/css/album_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/common/images/xz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/common/images/z.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/common/wang/config/src/js/editor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/common/wang/config/src/js/editor/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/front/css/apost.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/apost.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/front/css/authors.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/authors.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/front/css/bind_email.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/bind_email.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/front/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/front/css/fowgetpwd.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/fowgetpwd.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/front/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/front/css/post_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/post_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/front/css/setting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/setting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/front/css/u.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/u.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/group/css/group_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/group/css/group_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/group/css/group_manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/group/css/group_manage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/group/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/group/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/cms_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/cms_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/cms_imgs.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/cms_imgs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/cms_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/cms_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/album/album_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/album_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/album/image_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/image_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/album/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/album/my_album.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/my_album.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/all_authors.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/all_authors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/apost.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/apost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/informations.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/informations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/most_see.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/most_see.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/u.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/u.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/groups/atopic.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/groups/atopic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/groups/create_group.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/groups/create_group.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/groups/distribution.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/groups/distribution.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/groups/group_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/groups/group_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data/test.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/groups/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/groups/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -492,7 +460,7 @@
       <workItem from="1652256994077" duration="2995000" />
       <workItem from="1652260029366" duration="1517000" />
       <workItem from="1652266842173" duration="10434000" />
-      <workItem from="1652327750607" duration="11994000" />
+      <workItem from="1652327750607" duration="17761000" />
     </task>
     <task id="LOCAL-00001" summary="cms登录，修改密码，banner界面布局完成，mongodb配置完成">
       <created>1535255722571</created>
@@ -648,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652327792399</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="改了图标等">
+      <created>1652341745159</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1652341745159</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -839,7 +814,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/myflask$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652341727582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myflask$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652360367560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flaskcms$mycms.coverage" NAME="mycms Coverage Results" MODIFIED="1651925924552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/myflask$mycms.coverage" NAME="mycms Coverage Results" MODIFIED="1652174794610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flaskcms$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652085473661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -22,6 +22,8 @@
 
 ~~支付：PaysApi~~
 
+python:3.6.15
+
 内容存储：mysql
 
 图片存储：阿里云对象存储oss

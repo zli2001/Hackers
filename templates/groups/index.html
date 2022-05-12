@@ -32,7 +32,7 @@
                             <img src="{{ group.avatar }}" alt="">
                             <div class="group-name-box">
                                 <div class="name">
-                                    <a href="{{ url_for("group.group_detail",group_id=group.id) }}">{{ group.name }}</a>
+                                    <a href="{{ url_for("group.group_detail",group_id=group.id) }}" style="color: white">{{ group.name }}</a>
                                    
                                 </div>
 
@@ -53,7 +53,7 @@
                             <img v-bind:src="group.avatar" alt="">
                             <div class="group-name-box">
                                 <div class="name">
-                                    <a :href="'/g/group_detail/'+group.id">[[group.name]]</a>
+                                    <a :href="'/g/group_detail/'+group.id" style="color: white">[[group.name]]</a>
                                 </div>
 
                                 <div class="group-msg">

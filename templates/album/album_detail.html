@@ -108,11 +108,11 @@
                             <div class="host-title"><a href="{{ url_for("album.my_album",user_id=user.id) }}">{{ user.nickname }}</a></div>
                             <div class="J-host-Countinfo" style="color: white">
                                 <a>
-                                    <b class="num">{{ count }}</b><br>
-                                    <b class="num-t">照片数</b>
+                                    <!--- <b class="num">{{ count }}</b><br>
+                                    <b class="num-t">专题数</b> --->
                                 </a><a style="margin-left: 20px">
                                 <b class="num">{{ user.albums|length }}</b><br>
-                                <b class="num-t">相册集</b>
+                                <b class="num-t">专题集</b>
                             </a><a style="margin-left: 20px">
                                 <b class="num">{{ wodefensi|length }}</b><br>
                                 <b class="num-t">粉丝数</b>
@@ -120,7 +120,7 @@
                             </div>
                         </li>
                     </ul>
-                <div class="h3-title" style="color: #d7d1d6">其它相册</div>
+                <div class="h3-title" style="color: #d7d1d6">其它专题</div>
                     <div class="other">
                         {% for album in user.albums %}
                                {% if album.power !=1 %}

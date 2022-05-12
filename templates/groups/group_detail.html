@@ -23,7 +23,7 @@
                     <img src="{{ group.avatar }}" alt="">
                     <div class="group-name-box">
                         <div class="name">
-                            <a href="">{{ group.name }}</a>
+                            <a href="" style="color: white">{{ group.name }}</a>
                             {% if g.front_user and g.front_user in group.users %}
                                 <button class="layui-btn-sm layui-btn">已加入</button>
                             {% else %}
@@ -54,7 +54,7 @@
             </div>
             <div class="group-posts">
                 <div class="group-posts-zuixin">
-                    <span>最新讨论</span>
+                    <span style="color: white">最新讨论</span>
                     <a href="{{ url_for("group.group_atopic",group=group.id) }}">+&nbsp;发布</a>
                 </div>
                 {% for topic in topics %}
