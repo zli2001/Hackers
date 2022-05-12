@@ -1,6 +1,5 @@
 #encoding:utf-8
-# __author__ = 'donghao'
-# __time__ = 2019/2/25 18:27
+
 
 from threading import Thread
 from celery import Celery

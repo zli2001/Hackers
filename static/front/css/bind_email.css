@@ -1,6 +1,6 @@
 .getpwd{
     font-weight: lighter;
-    color: #57c264;
+    color: #f1fff3;
     font-size: 20px;
     padding-bottom: 20px;
 }
@@ -22,9 +22,10 @@
 }
 .album-author-name {
     font: 24px/1.2 微软雅黑,Arial,宋体;
-    color: #333;
+    color: #efe3e3;
     width: 100%;
 }
+
 .weibo_desc{
     color: #2e75bc;
     font-weight: lighter;

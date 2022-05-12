@@ -83,7 +83,7 @@
                 <div class="select-bar">
                     <ul>
                         {% if tag_name == 'all' %}
-                            <li><a style="background-color: #3eb1f0;"
+                            <li><a style="background-color: #d6ecfa;"
                                    href="{{ url_for("album.index",tag='all',elit=elit) }}">全部</a></li>
                             {% for tagname in tagnames[0:16] %}
                                 <li><a href="{{ url_for("album.index",tag=tagname[0].strip(),elit=elit) }}">{{ tagname[0] }}</a></li>
@@ -92,7 +92,7 @@
                             <li><a href="{{ url_for("album.index",tag='all',elit=elit) }}">全部</a></li>
                             {% for tagname in tagnames[0:16] %}
                                 {% if tagname[0] == tag_name %}
-                                    <li><a style="background-color: #3eb1f0;"
+                                    <li><a style="background-color: #e2f6ff;"
                                            href="{{ url_for("album.index",tag=tagname[0].strip(),elit=elit) }}">{{ tagname[0] }}</a>
                                     </li>
                                 {% else %}

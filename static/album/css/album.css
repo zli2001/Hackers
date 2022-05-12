@@ -36,7 +36,7 @@
 .album-header ul li a{color: #7d89c2}
 
 .create-album{float: right}
-.create-album a{color: #6f24a0;font-weight: lighter;font-size: 14px}
+.create-album a{color: #FFFFFF;font-weight: lighter;font-size: 14px}
 
 
 .row{
@@ -102,7 +102,7 @@
 
 .control-label{
 	font-size: 12px;
-	color: #6f24a0;
+	color: #FFFFFF;
 }
 /*相册图片列表*/
 .album-header img{width: 80px;height: 80px;float: left;border: 2px solid antiquewhite;padding: 5px}
@@ -203,7 +203,7 @@ opacity: 0;
 }
 .btn-hollow {
     border: 1px solid rgba(59,194,29,.7);
-    color: #42c02e !important;
+    color: #cdbeda !important;
     position: relative;
 }
 .modal-footer a{float: left;margin-left: 10px;}

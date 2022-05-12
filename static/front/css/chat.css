@@ -2,6 +2,7 @@
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
+    color: white;
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 20px;
 }
@@ -58,7 +59,7 @@
 }
 
 .chat-right a {
-    color: #0f26a0;
+    color: #d3d8fa;
     font-weight: lighter;
     margin-left: 5px;
 }
@@ -111,10 +112,10 @@
     width: 100%
 }
 
-.chat-time {text-align: center;color: #6f24a0;font-weight: lighter;font-size: 14px}
+.chat-time {text-align: center;color: #FFFFFF;font-weight: lighter;font-size: 14px}
 
 .riimg{width: 10%;height: 48px;border-radius: 50%;float: right;margin-top: 10px}
-.m {padding: 15px;color: #333;font-weight: lighter;font-size: 14px;}
+.m {padding: 15px;color: #f6f5f5;font-weight: lighter;font-size: 14px;}
 
 /*指示器*/
 .ri {

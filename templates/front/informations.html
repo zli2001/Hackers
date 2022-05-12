@@ -10,7 +10,7 @@
     <div class="main_contener">
         <!--轮播图结束-->
         <div class="col-md-12">
-                <div class="infomations-title">我的提醒</div>
+                <div class="infomations-title" style="color: white">我的提醒</div>
             <div class="infomations-check">
                 <span>全部提醒</span>
 {#                <span style="margin-left: 5px">未读提醒&nbsp;&nbsp;|</span>#}
@@ -20,7 +20,7 @@
             {% if messages|length ==0 %}
                         <img src="{{ static("front/images/empty.png") }}" alt=""
                         style="margin:100px 330px 30px 330px">
-                        <p class="no-img" style="text-align: center">还木有新消息哦~</p>
+                {#   <p class="no-img" style="text-align: center">还木有新消息哦~</p>  #}
             {% endif %}
             {% for message in messages %}
                     <li>

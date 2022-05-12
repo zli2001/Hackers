@@ -4,7 +4,7 @@
 }
 .group-posts-zuixin{float: left;font-size: 15px;font-weight: bold;border-bottom: 1px solid #eeeeee;width: 100%;
     margin-top: 20px;padding-bottom: 20px}
-.group-posts-zuixin a{float: right;color: #70e157}
+.group-posts-zuixin a{float: right;color: #dfb1cc}
 
 
 
@@ -33,6 +33,6 @@
 .topic-author-time{float: left;margin-left: 20px;color: #7bd2ae;margin-top: 35px}
 .topic-text{float: left;margin-top:30px;font-size: 16px;width: 100%}
 .return-to-group{float: right;}
-.return-to-group a{color: #70e157}
+.return-to-group a{color: #dfb1cc}
 .topic-comment-group{margin-top: 30px;float: left;width: 100%}
 .topic-comment-group button{float: right}

@@ -75,7 +75,7 @@ body {
 
 .nav-sidebar > li > a {
     background: #494f60;
-    color: #77c16c;
+    color: #d3c3fc;
     margin-left: 25px;
     display: block;
 }
@@ -112,7 +112,7 @@ body {
 }
 
 .nav-sidebar > li.unfold > a{
-    color: #db4055;
+    color: #ffc0df;
 }
 
 .nav-sidebar > li.unfold > a span{
@@ -152,7 +152,7 @@ body {
 }
 
 .nav-group{
-    margin-top: 10px;
+    /*margin-top: 10px*/;
 }
 
 

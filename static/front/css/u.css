@@ -17,7 +17,7 @@
 }
 
 .username {
-    color: #555;
+    color: #bab7b7;
 }
 
 .post_title {
@@ -34,15 +34,16 @@
 .num {
     text-align: center;
     padding-left: 16px;
+    color: #d7cfcf;
 }
-.gray{color: grey;font-weight: lighter}
+.gray{color: #adadad;font-weight: lighter}
 .gray:hover{
     cursor: pointer;}
 
 .word{
     text-align: center;
     padding-left: 20px;
-    color: gray;
+    color: #d7cfcf;
     font-weight: lighter;
 }
 .word:hover{cursor: pointer}
@@ -71,13 +72,16 @@ div.tab {
 /*}*/
 
 /* Change background color of buttons on hover */
+div.tab button {
+    color: white;
+}
 div.tab button:hover {
-    color: #27c24c;
+    color: #af9fc9;
 }
 
 /* Create an active/current tablink class */
 div.tab button.active {
-    color: #27c24c;
+    color: #dfb1cc;
     border-bottom: 5px solid #eeeeee;
 }
 
@@ -91,7 +95,7 @@ div.tab button.active {
 
 @media screen and (min-width: 280px) and (max-width: 400px) {
     .text {
-        color: #676262;
+        color: #bab5b5;
         float: left;
         width: 60%;
         margin-top: 10px;
@@ -148,6 +152,7 @@ width: 115px;
     .tab button {
         background-color: inherit;
         float: left;
+        color: white;
         border: none;
         outline: none;
         cursor: pointer;
@@ -163,7 +168,7 @@ width: 115px;
         margin-left: 30px;
     }
       .text {
-        color: #676262;
+        color: #efe6e6;
         float: left;
         width: 60%;
         margin-top: 10px;
@@ -206,17 +211,20 @@ width: 115px;
 }
 
 /*#侧栏*/
-.u-title{float: left;margin-bottom: 10px;font-size: 14px;color: #969696;width: 100%;margin-top: 10px}
-.u-discription-email{float: left;padding-bottom: 10px;font-size: 15px;margin-top: 10px;line-height: 20px;border-bottom: 1px solid #eeeeee;width: 100%}
-.u-discription{float: left;margin-bottom: 10px;line-height: 20px;font-size: 14px;margin-top: 10px}
+.u-title{float: left;margin-bottom: 10px;font-size: 14px;color: #c2c0c0;width: 100%;margin-top: 10px}
+.u-discription-email{color:white;float: left;padding-bottom: 10px;font-size: 15px;margin-top: 10px;line-height: 20px;border-bottom: 1px solid #eeeeee;width: 100%}
+.u-discription{color:white;float: left;margin-bottom: 10px;line-height: 20px;font-size: 14px;margin-top: 10px}
 .u-fensi img{width: 30px;height: 30px;float: left;border-radius: 50%}
+.u-title a{
+    color: white;
+}
 .u-fensi span{float: left;margin-top: 10px;font-size: 15px;margin-left: 10px}
 .u-fensi span:hover{cursor: pointer}
 .u-group ul li{float: left;width: 100%;margin-top: 10px}
 .u-group ul li a img{
     width: 30px;height: 30px;float: left;border-radius: 5px
 }
-.u-name{float: left;margin-left: 10px;color: #2f2f2f;font-weight: lighter;font-size: 14px;margin-top: 5px}
+.u-name{float: left;margin-left: 10px;color: #d9d7d7;font-weight: lighter;font-size: 14px;margin-top: 5px}
 
 
 
@@ -232,8 +240,8 @@ opacity: 0;
 }
 
 .btn-hollow {
-    border: 1px solid rgba(59,194,29,.7);
-    color: #42c02e !important;
+    border: 1px solid #6c8bb9;
+    color: #cdbeda !important;
     position: relative;
     font-size: 25px;
     margin-left: 10px;
@@ -279,13 +287,13 @@ opacity: 0;
 .meta{
     padding-top: 2px;
     font-size: 12px;
-    color: #969696;
+    color: #e8e7e7;
     margin-left: 10px;
 }
 .meta span{
     margin-right: 10px;
 padding-right: 10px;
-border-right: 1px solid #969696;
+border-right: 1px solid #d5d0d0;
 }
 
 .my-albums{float: left}
@@ -310,7 +318,7 @@ border-right: 1px solid #969696;
     margin-left: 2%;
 }
 
-.screen_name,.description,.followers_count,.friends_count,.statuses_count{float: left;font-weight: lighter;color: #6f787f;margin-top: 5px;overflow: hidden}
+.screen_name,.description,.followers_count,.friends_count,.statuses_count{float: left;font-weight: lighter;color: #c6d2dc;margin-top: 5px;overflow: hidden}
 .screen_name a{color: #8b82c2}
 .screen_name,.description{width:100%}
 .friends_count{margin-left: 10px}

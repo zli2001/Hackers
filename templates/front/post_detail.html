@@ -30,7 +30,7 @@
                     <a href="{{ url_for("front.u",user_id=post.author.id) }}"><img src="{{ post.author.avatar }}" alt=""></a>
                 </div>
                 <div class="header-info-user">
-                    <div class="album-author-name"><a>{{ title }}</a>
+                    <div class="album-author-name" ><a style="color: white">{{ title }}</a>
                     </div>
                     <div class="picks-attention">
                         <span><i class="unhide icon"></i>{{ post.read_count }}</span>
@@ -55,11 +55,11 @@
 
                 </div>
             </div>
-<span style="margin-top: 20px">分享到</span>
-<div class="bdsharebuttonbox" style="padding-bottom: 20px"><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ好友</a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网">豆瓣网</a><a href="#" class="bds_more" data-cmd="more"></a></div>
+<span style="margin-top: 20px;color: white">分享到</span>
+<div class="bdsharebuttonbox" style="padding-bottom: 20px;color: white"><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ好友</a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网">豆瓣网</a><a href="#" class="bds_more" data-cmd="more"></a></div>
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"来自Hackers站点的分享","bdMini":"2","bdMiniList":false,"bdPic":"http://img.zcool.cn/community/0174b15980b65ea8012156032eda5b.jpg@2o.jpg","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16},"image":{"viewList":["sqq","qzone","weixin","tsina","tqq","douban","ty"],"viewText":"","viewSize":"24"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["sqq","qzone","weixin","tsina","tqq","douban","ty"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-            <div class="post-content docs-pictures">
-                {{ content|safe }}
+            <div class="post-content docs-pictures" style="background: white;">
+                <div class="post-content-text" style="margin: 0.5cm;"> {{ content|safe }} </div>
             </div>
 
             <div class="star-box">
@@ -103,11 +103,11 @@
                     <p>© 本文版权归 Hackers 所有，任何形式转载请表示</p>
                 </div>
                 <div class="dsz-bar" data-post-id="{{ post.id }}">
-                    <button class="layui-btn layui-btn-sm" style="background-color: #4F946E" id="collect-btn">
+                    <button class="layui-btn layui-btn-sm" style="background-color: #ca95f6" id="collect-btn">
                           <i class="layui-icon layui-icon-star"></i>收藏<span
                             id="collect-count">{{ post.collects|length }}</span>
                     </button>
-                      <button class="layui-btn layui-btn-sm" style="background-color: #c9e5d7">
+                      <button class="layui-btn layui-btn-sm" style="background-color: #6c8bb9}">
                           <i class="layui-icon layui-icon-reply-fill"></i>评论{{ post.comments|length }}
                     </button>
                 </div>
@@ -116,7 +116,7 @@
                         <div data-post-id="{{ post.id }}">
                           <textarea name="desc" placeholder="请输入内容" id="comment-content"
                                     class="layui-textarea"></textarea>
-                            <button class="layui-btn layui-btn-sm btn-right" id="comment-btn">提交评论</button>
+                            <button class="layui-btn layui-btn-sm btn-right" style="background-color:#dfb1cc " id="comment-btn">提交评论</button>
                         </div>
                       </div>
                 </div>
@@ -200,7 +200,7 @@
                 </div>
             </div>
             <div class="m-title"><a href="{{ url_for("front.u",user_id=post.author.id) }}"
-                                    style="color: #57c264">最新帖子</a></div>
+                                    style="color: #FFFFFF">最新帖子</a></div>
             <div class="m-discription">
                 <ul class="m-albums">
                     {% for post in hot_posts %}

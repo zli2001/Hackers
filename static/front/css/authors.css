@@ -6,6 +6,12 @@
     min-height: 340px;
     border-bottom: 1px solid #eeeeee;
 }
+label{
+    color: white;
+}
+.detail{
+    color: #ffffff;
+}
 .authors-group img{
     padding: 10px;
     float: left;

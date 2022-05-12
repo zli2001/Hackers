@@ -11,7 +11,7 @@
 .search input{width: 60%;float: left;margin:0 auto;height: 30px;border-radius: 0}
 .search button{float: left;height: 30px;width:50px;border-radius: 0;background-color: #eee;line-height: 20px}
 
-.tuijian{margin-top: 20px;padding-bottom: 20px;color:#209e85;}
+.tuijian{margin-top: 20px;padding-bottom: 20px;color: #ffffff;font-family: 幼圆;font-size: 20px}
 
 .p-title img{width: 50%;height: 50px}
 /*.p-title{*/
@@ -66,8 +66,8 @@
     width: 70%;
     height: 100px;
 }
-.name{float: left;font-weight: bolder;font-size: 20px;margin-left: 2%;margin-top:10px}
-.group-msg{float: left;margin-left: 2%;font-size: 15px;font-weight: lighter;color: #363a47;margin-top: 10px;width: 100%}
+.name{color:white;float: left;font-weight: bolder;font-size: 20px;margin-left: 2%;margin-top:10px}
+.group-msg{float: left;margin-left: 2%;font-size: 15px;font-weight: lighter;color: #c9d0f5;margin-top: 10px;width: 100%}
 .group-jies{margin-top: 10px;width: 90%;float: left;font-weight: normal;line-height: 1;color: #999;}
 /*#侧栏*/
 .welll{
@@ -86,11 +86,13 @@
     margin-top: 10px;
 }
 .cge-desc button{float: right;margin-top: 10px;}
-.cg{color: #005580}
+.cg{color: #e3f3ff;font-size: 20px;font-family: 幼圆;
+}
 .welll a{padding-top: 20px;}
 .paih{margin-top: 20px}
 .paih-title{margin-top: 10px;float: left;width: 100%;}
-.paih-title span{font-weight: bolder;font-size: 13px;color: #666}
+.paih-title span{font-weight: bolder;font-size: 13px;color: #b6b5b5
+}
 
 .pa-left{margin-left: 15px;}
 .pa-left-2{margin-right: 20px;float: right;}
@@ -100,7 +102,8 @@
 .paih ul li{float: left;margin-top: 10px;width: 100%}
 .paih ul li img{width: 13%;height: 30px;float: left;margin-left: 40px}
 
-.paim{float: left}
-.users{float: right;margin-right: 20px}
-.group-name{width: 40%;float: left;margin-left: 10px;margin-top: 10px}
-.group-name a{color: #5153e1}
+.paim{float: left;color: white}
+.users{float: right;margin-right: 20px;color: white}
+.group-name{width: 40%;float: left;margin-left: 10px;margin-top: 10px;color: white}
+.group-name a{color: #cdcff3
+}

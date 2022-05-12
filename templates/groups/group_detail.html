@@ -36,9 +36,9 @@
                         <div class="group-msg">
                             <span>创建时间&nbsp;&nbsp;{{ group.create_time|create_time }}</span><br>
                             {% if group.create_user == g.front_user.id %}
-                            <span style="float: right" id="dge-desc"><a style="color: #70e157">编辑简介</a></span>
+                            <span style="float: right" id="dge-desc"><a style="color: #dfb1cc">编辑简介</a></span>
                             {% endif %}
-                            <span>创建人&nbsp;&nbsp; <a  style="color: #70e157"
+                            <span>创建人&nbsp;&nbsp; <a  style="color: #dfb1cc"
                                     href="{{ url_for("front.u",user_id=create_user.id) }}">{{ create_user.nickname }}</a></span><br>
                             <span>人数&nbsp;&nbsp; {{ group.users|length }}</span>
                         </div>
@@ -65,7 +65,7 @@
                                          <span class="title">
                                              <a href="{{ url_for("group.topic_detail",topic_id=topic.id) }}">{{ topic.title }}</a>
                                          </span>
-                                        <span style="float: right"><a style="color: #70e157;font-weight: lighter;font-size: 15px" href="{{ url_for("group.topic_detail",topic_id=topic.id) }}">
+                                        <span style="float: right"><a style="color: #dfb1cc;font-weight: lighter;font-size: 15px" href="{{ url_for("group.topic_detail",topic_id=topic.id) }}">
                                             <i class="mail forward icon"></i>&nbsp;{{ topic.topcomments|length }}&nbsp;回应</a></span>
                                     <div class="author-group">
                                         <img src="{{ topic.author.avatar }}" alt="">

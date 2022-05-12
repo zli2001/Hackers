@@ -71,8 +71,8 @@ width: 82px;
 opacity: 0;
 }
 .btn-hollow {
-    border: 1px solid rgba(59,194,29,.7);
-    color: #42c02e !important;
+    border: 1px solid #6c8bb9;
+    color: #cdbeda !important;
     position: relative;
 }
 .btn-hollow {

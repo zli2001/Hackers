@@ -3,6 +3,7 @@
     margin-top: 20px;
     border-bottom: 1px solid #f3f3f3;
     float: left;
+    color: white;
     padding-bottom: 20px;
 }
 .header-info-img{
@@ -19,15 +20,17 @@
     width: 450px;
     color: #999;
 }
-.album-author-name{font: 24px/1.2 微软雅黑,Arial,宋体;color: #333;width: 100%}
+.album-author-name{font: 24px/1.2 微软雅黑,Arial,宋体;color: #c4c3c3;width: 100%}
 .pick-count{font-weight: normal;font-size: 12px;font-style: normal;color: #999999}
-.picks-attention{margin-top: 10px;width: 100%;color: #d8bcf6}
+.picks-attention{margin-top: 10px;width: 100%;color: #e9d5ff
+}
 .picks-attention span{margin-left: 5px}
 .picset-author{margin-top: 10px;width: 100%}
-.u-name{color: #777af6;float: left;font-size: 15px}
-.u-name:hover{border-bottom: 1px solid #2e75bc}
+.u-name{color: #e0e0e0;float: left;font-size: 15px}
+.u-name:hover{border-bottom: 1px solid #e2eefc
+}
 .pic-btns{margin-left: 10px;float: left}
-.pic-btns-1{background-color:#3eb1f0;color:white;font-weight: lighter;padding: 3px 8px;border: 0;margin-left: 5px}
+.pic-btns-1{background-color: #6db4c9;color:white;font-weight: lighter;padding: 3px 8px;border: 0;margin-left: 5px}
 .pic-btns-2{color: #333;background-color: #e1e1e1;font-weight: lighter;padding: 2px 5px;border: 0;margin-left: 5px}
 .pic-btns-2:hover{background-color: #b2c9f6}
 .pic-btns-1:hover{background-color: #91b4c2}
@@ -47,7 +50,7 @@ word-spacing: normal;
 .auth{
 color: #c0bec2;font-weight: lighter;
 }
-.pic-info{margin-top: 40px}
+.pic-info{margin-top: 40px;color: white}
 .pic-imges{margin-top: 40px}
 .pic-imges ul{overflow: hidden}
 .pic-imges ul li{margin-top: 40px}
@@ -103,7 +106,7 @@ letter-spacing: 0;}
 .layui-textarea{
     margin-top: 20px;
 }
-.comment-now-btn{background-color:#3eb1f0;color:white;font-weight: lighter;padding: 3px 8px;border: 0;margin-left: 5px;float: right;margin-top: 10px}
+.comment-now-btn{background-color: #84c3e7;color:white;font-weight: lighter;padding: 3px 8px;border: 0;margin-left: 5px;float: right;margin-top: 10px}
 .comment-now-btn:hover{background-color: #b2c9f6}
 
 
@@ -118,9 +121,13 @@ letter-spacing: 0;}
 .comment-content{padding-top: 10px;font-size: 14px;margin-left: 10px}
 
 .comment-group{float: left;width: 90%;margin-top: 10px}
-.author-box{float: left}
+.author-box{float: left;background: #fcfcfc
+}
 .duoji-comment{
     float: right;
     margin-top: 10px;
 }
 .duoji-comment a{margin-left: 5px}
+b{
+    color: white;
+}

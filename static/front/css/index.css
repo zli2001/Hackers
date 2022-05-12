@@ -65,13 +65,14 @@ border-top: 0;
 .img-group img{width: 125px;height: 100px;float: left;border-radius: 4px;margin-top: 10px;margin-left: 10%}
 /*.content{float: left;width: 100%}*/
 .title a{font-size: 18px;font-weight: 600;
-    color: #333;text-decoration: none;}
-.author-group{color: #898989;;margin-top: 10px}
+    color: #e5e3e3;text-decoration: none;}
+.author-group{color: #cbc8c8;;margin-top: 10px}
 .author-group a{text-decoration: none;color: #b2ddff;}
-.author-group a:hover{color: #9b9fb1}
+.author-group a:hover{color: #d3d7e7
+}
 .author-group img{width: 30px;height: 30px;border-radius:10%;border: 1px solid #ddd}
-.text{color: #676262;float: left;width: 70%;margin-top: 10px}
-.textfill{color: #676262;float: left;width: 100%;margin-top: 10px}
+.text{color: #bdb9b9;float: left;width: 70%;margin-top: 10px}
+.textfill{color: #cdc8c8;float: left;width: 100%;margin-top: 10px}
 
 .navbar-nav > li > a:hover{
     margin-top: 10px;
@@ -156,7 +157,7 @@ border-bottom: none;
 }
 input[type="checkbox"]:checked + label::before {
     content: "\2713";
-    background-color: yellowgreen;
+    background-color: #f6ffe8;
 }
 input[type="checkbox"] {
     position: absolute;
@@ -216,11 +217,12 @@ focus-ul{float: left;overflow: hidden}
 }
 .bar-name{width: 100%;height: 60px;padding:0;color: white;font-size: 30px;font-weight: lighter;
 line-height: 60px;text-align: center}
-.h{background-color: #f06e57}
-.s{background-color: #d1e10e}
-.see{background-color: #A5DC86}
-.co{background-color: #c0d8c0}
-.colle{background-color: #6ee152}
+
+.s{background-color: #40428c}
+.h{background-color: #dfb1cc}
+.see{background-color: #af9fc9}
+.co{background-color: #cdbeda}
+.colle{background-color: #dfb1cc}
 
 .follow-add{float: right;margin-top: 20px;font-weight: bold;color: #fcc7d7;font-weight: lighter}
 .follow-add:hover{cursor: pointer}

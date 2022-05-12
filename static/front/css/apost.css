@@ -4,7 +4,9 @@
         margin: 0 auto;
         min-height: 600px;
     }
+    .w-e-text{background-color:#f3f3f3}
     .tag-group{width: 100%;height: 60px;background-color:#f3f3f3;min-height: 200px;}
+
 }
 @media screen and (min-width: 400px) and (max-width: 700px) {
      .main_contener {

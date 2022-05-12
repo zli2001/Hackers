@@ -6,7 +6,7 @@
     margin-left: 10px;
     color: white;}
 .post-content{float: left;width: 100%;margin-top: 50px;
-    padding-bottom: 50px;border-bottom: 1px solid black;}
+    padding-bottom: 50px;border-bottom: 1px solid ;}
 
 .author-box{width: 100%;min-height:150px;color: #969696;background:#fff6ed}
 .mode-card{float: left;width:100%;padding: 5%}
@@ -21,7 +21,7 @@
 .star{display: block;}
 /*举报*/
 .jubao{padding-top: 30px;float: right;color:#bbb;}
-.jubao:hover{cursor: pointer;color: #27c24c;}
+.jubao:hover{cursor: pointer;color: #d4f8f2;}
 /*版权*/
 .banquan{color: #bbb;display: block;padding-top: 40px;font-size: 13px}
 /*点赞，收藏，转发*/
@@ -30,10 +30,13 @@
 .post-comment-box{float: left;width: 100%;margin-top: 40px}
 .layui-input-block{margin-left: 0}
 .btn-right{margin-top: 10px;float: right}
-
+.bdsharebuttonbox a{
+    color: white;
+}
 .tab{margin-top: 40px;float: left;padding-bottom:8px;
     border-bottom: 1px solid #e6e6e6;width: 100%}
-.tab span{color: #70e157}
+.tab span{color: #fdbdd2
+}
 .tab span:hover{cursor: pointer}
 .tab a{color: #afc0f1;padding-left: 20px;text-decoration:none}
 
