@@ -180,11 +180,12 @@ input[type="checkbox"] {
 .board-name{color: white;}
 .board-name span{font-size: 18px;margin-left: 20px;display: block;padding-top: 13px}
 
-.most-dz{background-color: #7ad28b}
-.most-rm{background-color: #e17f5a}
-.most-ck{background-color: #e1c4a5}
-.most-sc{background-color: #b6e1b6}
-.most-pl{background-color: #9a9eee}
+.most-dz{background-color: #40428c}
+.most-rm{background-color: #6c8bb9}
+.most-ck{background-color: #af9fc9}
+.most-pl{background-color: #cdbeda}
+.most-sc{background-color: #dfb1cc}
+
 
 #排行榜
 .focus-ul{
@@ -221,7 +222,7 @@ line-height: 60px;text-align: center}
 .co{background-color: #c0d8c0}
 .colle{background-color: #6ee152}
 
-.follow-add{float: right;margin-top: 20px;font-weight: bold;color: #efa7ef;font-weight: lighter}
+.follow-add{float: right;margin-top: 20px;font-weight: bold;color: #fcc7d7;font-weight: lighter}
 .follow-add:hover{cursor: pointer}
 
 .follow-added{float: right;margin-top: 20px;font-weight: bold;font-weight: lighter;color: #ee7f5c}

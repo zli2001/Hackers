@@ -63,11 +63,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color:#1d1239">
       <ul class="nav navbar-nav">
-        <li class=""><a href="{{ url_for("front.index") }}" style="color: white"><i style="color: #bddcde;font-size: 35px" class="iconfont  layui-extend-faxian"></i>首页</a></li>
-          <li class=""><a href="{{ url_for("group.index") }}" style="color: white"><i style="color: #779dcd;font-size: 35px" class="iconfont  layui-extend-qunzu"></i> 社区</a></li>
-        <li class=""><a href="{{ url_for("album.index") }}" style="color: white"><i style="color: #3697af;font-size: 35px" class="iconfont  layui-extend-xuexi"></i> 学习</a></li>
+        <li class=""><a href="{{ url_for("front.index") }}" style="color: white"><i style="color: #bddcde;font-size: 25px" class="iconfont  layui-extend-faxian"></i>首页</a></li>
+          <li class=""><a href="{{ url_for("group.index") }}" style="color: white"><i style="color: #779dcd;font-size: 25px" class="iconfont  layui-extend-qunzu"></i> 社区</a></li>
+        <li class=""><a href="{{ url_for("album.index") }}" style="color: white"><i style="color: #3697af;font-size: 25px" class="iconfont  layui-extend-xuexi"></i> 学习</a></li>
           {% if g.front_user %}
-                  <li class=""><a href="{{ url_for("front.chat",user_id = g.front_user.id) }}"><i style="color: #5962b6;font-size: 35px" class="iconfont  layui-extend-youjian"></i> 私信</a></li>
+                  <li class=""><a href="{{ url_for("front.chat",user_id = g.front_user.id) }}"><i style="color: #5962b6;font-size: 25px" class="iconfont  layui-extend-youjian"></i> 私信</a></li>
           {% endif %}
         <li class="dropdown">
 
@@ -75,19 +75,19 @@
       </ul>
             <ul class="nav navbar-nav navbar-right" style="border-color: #1d1239">
                 <li>
-                    <a href="{{ url_for("front.search") }}" style="color: white;font-size: 20px">
-                    <i style="color: #977cff;font-size: 20px" class="iconfont  layui-extend-sousuoxiao"></i> 搜索
+                    <a href="{{ url_for("front.search") }}" style="color: white;font-size:  15px" ">
+                    <i style="color: #977cff;font-size: 9px" class="iconfont  layui-extend-sousuoxiao"></i> 搜索
                 </a></li>
-                <li><a href="{{ url_for("front.apost") }}" style="color: white">
-                   <i style="color: #ad4f78;font-size: 20px" class="iconfont  layui-extend-bianji1"></i> 发帖
+                <li><a href="{{ url_for("front.apost") }}" style="color: white;font-size:  15px" ">
+                   <i style="color: #ad4f78;font-size:  9px" class="iconfont  layui-extend-bianji1"></i> 发帖
                 </a></li>
                 {% if g.front_user %}
                     <!---
                     <li><a id="element_id" style="color: white">
                     <i class="dashboard icon"></i>&nbsp;&nbsp;主题
                 </a></li>--->
-                           <li><a href="{{ url_for("front.information") }}#" style="color: white">
-                     <i style="color: #d4a1be;font-size: 20px" class="iconfont  layui-extend-tixing"></i>消息
+                           <li><a href="{{ url_for("front.information") }}#" style="color: white;font-size:  15px ">
+                     <i style="color: #d4a1be;font-size:  9px" class="iconfont  layui-extend-tixing"></i>消息
                 </a></li>
                     <span style="display: none;" data-login-user="1" id="login-span"></span>
                     <li class="dropdown">
@@ -105,11 +105,11 @@
                     </ul>
                 </li>
                     {% else %}
-                                    <li><a href="{{ url_for("front.login") }}" ><span style=" color: white;">登录</span></a></li>
-                                    <li><a href="{{ url_for("front.signup") }}"><span style=" color: white;">注册</span></a></li>
+                                    <li><a href="{{ url_for("front.login") }}" style=";font-size:  15px"><span style=" color: white;">登录</span></a></li>
+                                    <li><a href="{{ url_for("front.signup") }}" style=";font-size:  15px"><span style=" color: white;">注册</span></a></li>
                     {% endif %}
             <li>
-              <select  id="language" class="form-control"  style="float:right;margin-bottom: 10px;margin-top: 15px;">
+              <select  id="language" class="form-control"  style="float:right;margin-bottom: 10px;margin-top: 15px;size: 15px">
                   <option value="中文">中文</option>
                   <option value="英文">英文</option>
                 </select>
