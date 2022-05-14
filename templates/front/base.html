@@ -65,7 +65,7 @@
       <ul class="nav navbar-nav">
         <li class=""><a href="{{ url_for("front.index") }}" style="color: white"><i style="color: #bddcde;font-size: 25px" class="iconfont  layui-extend-faxian"></i>首页</a></li>
           <li class=""><a href="{{ url_for("group.index") }}" style="color: white"><i style="color: #779dcd;font-size: 25px" class="iconfont  layui-extend-qunzu"></i> 社区</a></li>
-        <li class=""><a href="{{ url_for("album.index") }}" style="color: white"><i style="color: #3697af;font-size: 25px" class="iconfont  layui-extend-xuexi"></i> 学习</a></li>
+        <li class=""><a href="{{ url_for("album.index") }}" style="color: white"><i style="color: #3697af;font-size: 25px" class="iconfont  layui-extend-xuexi"></i> 资源</a></li>
           {% if g.front_user %}
                   <li class=""><a href="{{ url_for("front.chat",user_id = g.front_user.id) }}"><i style="color: #5962b6;font-size: 25px" class="iconfont  layui-extend-youjian"></i> 私信</a></li>
           {% endif %}

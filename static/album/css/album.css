@@ -238,7 +238,7 @@ opacity: 0;
 
 .pic-btns{margin-top: 20px;float: left}
 .pic-btns-1{background-color:#3eb1f0;color:white;font-weight: lighter;padding: 3px 8px;border: 0;margin-left: 5px}
-.pic-btns-2{color: #333;background-color: #e1e1e1;font-weight: lighter;padding: 2px 5px;border: 0;margin-left: 5px}
+.pic-btns-2{color: #dedbdb;background-color: #e1e1e1;font-weight: lighter;padding: 2px 5px;border: 0;margin-left: 5px}
 .pic-btns-2:hover{background-color: #b2c9f6}
 .pic-btns-1:hover{background-color: #91b4c2}
 

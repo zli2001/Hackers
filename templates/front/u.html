@@ -268,7 +268,7 @@
                 </div>
             {% endif %}
 	{% if albums  %}
-            <div class="u-title">我的相册集</div>
+            <div class="u-title">我的资源集</div>
             <ul class="my-albums">
                 {% for album in albums %}
                     <li><a href="{{ url_for("album.album_detail",album_id=album.id) }}"><i

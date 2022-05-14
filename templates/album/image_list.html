@@ -22,13 +22,12 @@
     <div class="main_contener bg">
         <div class="col-md-12">
             <a style="color: #dfb1cc;margin-bottom: 30px"
-               href="{{ url_for("album.my_album",user_id=thisalbum.author.id) }}"><i class="reply icon"></i>&nbsp;去他的相册集</a><br>
+               href="{{ url_for("album.my_album",user_id=thisalbum.author.id) }}"><i class="reply icon"></i>&nbsp;去他的资源集</a><br>
             <div class="album-header">
                 <img src="{{ thisalbum.id|fengmian }}" alt="">
                 <div class="album-info">
                     <div class="album-name">
-                        <a href="">{{ thisalbum.name }}</a>
-                        <span>照片数：<i id="img-count">{{ images|length }}</i></span>
+                        <a href="" style="color: white">{{ thisalbum.name }}</a>
                             {% if thisalbum.power == 0 %}
                                <span style="color:grey" class="au">/&nbsp;公开</span>
                                 {% else %}
@@ -36,10 +35,10 @@
                                 {% endif %}
                     </div>
                     {% if g.front_user.id == thisalbum.author.id %}
-                        <div class="btns">
-                            <a data-toggle="modal" data-target=".bs-example-modal-lg" id="upload-my-img">上传图片</a>
-                            <a class="le" id="delete-btn">管理图片</a>
-                            <a class="le" id="setting">设置</a>
+                        <div class="btns" >
+                            <a data-toggle="modal" data-target=".bs-example-modal-lg" id="upload-my-img" style="color: #d7d1d6">上传图片</a>
+                            <a class="le" id="delete-btn" style="color: white">管理图片</a>
+                            <a class="le" id="setting" style="color: white">设置</a>
                             <div id="who-can-see" style="display: none">
                                 <select name="" id="ch">
                                     <option value="self">仅自己可见</option>
@@ -49,7 +48,7 @@
                                 </button>
                             </div>
 
-                            <a class="le" data-toggle="modal" data-target="#addtag">添加标签</a>
+                            <a class="le" data-toggle="modal" data-target="#addtag" style="color: white">添加标签</a>
                             <div class="modal fade" id="addtag" tabindex="-1" role="dialog"
                                  aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
@@ -142,6 +141,9 @@
                         </div>
                     </div>
                 </div>
+
+
+
                   <div class="tags-ri">
                                 {% for tag in thisalbum.tags %}
                                     <a class="ui red tag label">{{ tag.tagname }}</a>

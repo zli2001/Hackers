@@ -18,7 +18,7 @@
              <div class="album-header">
                 {% if g.front_user and g.front_user == user %}
                 <div class="create-album">
-                    <a  class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">创建相册</a>
+                    <a  class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">创建资源</a>
                 </div>
                 {% endif %}
             </div>
@@ -27,18 +27,18 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">创建相册</h4>
+        <h4 class="modal-title" id="myModalLabel">资源相册</h4>
       </div>
       <div class="modal-body">
           <div class="form-horizontal">
                 <div class="form-group">
-                    <label for="title" class="col-sm-2 control-label">相册名称</label>
+                    <label for="title" class="col-sm-2 control-label">资源名称</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="title" name="album_name" placeholder="请输入相册名称">
+                      <input type="text" class="form-control" id="title" name="album_name" placeholder="请输入资源名称">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="desc" class="col-sm-2 control-label">相册简介</label>
+                    <label for="desc" class="col-sm-2 control-label">资源简介</label>
                     <div class="col-sm-10">
                       <textarea class="form-control" rows="3" id="desc"></textarea>
                     </div>
@@ -57,7 +57,7 @@
                      {% if album.power == 1 %}
                          {% if g.front_user == album.author %}
                              <div class="column">
-                            <a href="{{ url_for("album.img_list",album_id=album.id) }}">
+                            <a href="{{ url_for("album.img_list",album_id=album.id) }} ">
                                 <img src="{{ album.id|fengmian}}">
                             </a>
                             <div class="album_name">{{ album.name }}</div>
@@ -88,8 +88,8 @@
         <div class="col-md-4">
             <div class="m-info">
                 <img src="{{ user.avatar }}" alt="">
-                <div class="m-name">
-                    <a href="{{ url_for("front.u",user_id=user.id) }}">{{ user.nickname}}</a>
+                <div class="m-name" style="color: white">
+                    <a href="{{ url_for("front.u",user_id=user.id) }}" style="color: white">{{ user.nickname}}</a>
                     <br><div class="addre">
                     <i class="layui-icon layui-icon-location"></i>
                     {{ user.address }}</div>
@@ -105,9 +105,9 @@
 
                 </div>
             </div>
-            <div class="m-title">签名~ ：</div>
-            <div class="m-discription">{{ user.signature }}</div>
-            <div class="m-title">相册集&nbsp;({{ albums|length }})</div>
+            <div class="m-title" >签名~ ：</div>
+            <div class="m-discription" style="color: white">{{ user.signature }}</div>
+            <div class="m-title">资源集&nbsp;({{ albums|length }})</div>
             <div class="m-discription">
             <ul class="m-albums">
                 {% for album in albums %}
@@ -116,7 +116,7 @@
             </ul>
             </div>
 
-            <div class="m-title"><a href="{{ url_for("front.u",user_id=user.id) }}" style="color: ##FFFFFF">最新帖子</a></div>
+            <div class="m-title" style="color: ##FFFFFF"><a href="{{ url_for("front.u",user_id=user.id) }}" >最新帖子</a></div>
             <div class="m-discription">
                 <ul class="m-albums">
                 {% for post in posts %}

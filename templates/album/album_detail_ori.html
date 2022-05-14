@@ -25,6 +25,7 @@
                 </div>
                 <div class="header-info-user">
                     <div class="album-author-name"><a href="{{ url_for("album.img_list",album_id=album.id) }}" style="color:white;">{{ album.name }}</a>
+                        <b class="pick-count">[{{ album.images|length }}张]</b>
                     </div>
                     <div class="picks-attention">
                         <span><i class="unhide icon"></i>{{ album.see_count }}</span>
@@ -58,7 +59,7 @@
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span></button>
                                             <h4 class="modal-title" id="myModalLabel">&nbsp;&nbsp;举报&nbsp;&nbsp;
-                                                <&nbsp;资源：{{ album.name }}&nbsp;></h4>
+                                                <&nbsp;相册：{{ album.name }}&nbsp;></h4>
                                         </div>
                                         <div class="modal-body">
                                             <div class="header-b">
@@ -81,13 +82,10 @@
 
 
 
-                <div class="pic-info" style="font-size: 20px" >
+                <div class="pic-info">
                     {{ album.desc }}
-                    <button type="button" class="layui-btn layui-btn-lg" style="float:right;background: #8b82c2;">下载</button>
-
                 </div>
             </div>
-
             <div class="pic-imges">
                 <ul class="docs-pictures">
                     {% for imge in album.images %}
@@ -97,9 +95,7 @@
                 </ul>
             </div>
 
-
-
-           <!--- <div class="album-author-foorter">
+            <div class="album-author-foorter">
                 <div class="h3-title" style="color: #d7d1d6">关于用户</div>
                 <div class="link-box">
                     <ul>
@@ -112,8 +108,8 @@
                             <div class="host-title"><a href="{{ url_for("album.my_album",user_id=user.id) }}">{{ user.nickname }}</a></div>
                             <div class="J-host-Countinfo" style="color: white">
                                 <a>
-                                    <b class="num">{{ count }}</b><br>
-                                    <b class="num-t">资源数</b>
+                                    <!--- <b class="num">{{ count }}</b><br>
+                                    <b class="num-t">资源数</b> --->
                                 </a><a style="margin-left: 20px">
                                 <b class="num">{{ user.albums|length }}</b><br>
                                 <b class="num-t">资源集</b>
@@ -135,9 +131,9 @@
                     {% endfor %}
                     </div>
                 </div>
-            </div> --->
+            </div>
             <div class="comment-area">
-                <div class="com-title" style="font-size: 15px">对该资源的评论（<span class="co-count">{{ album.album_comments|length }}</span>）</div>
+                <div class="com-title">对该组图的评论（<span class="co-count">{{ album.album_comments|length }}</span>）</div>
                 <textarea placeholder="请输入评论" class="layui-textarea" id="comment-content"></textarea>
                 <button class="comment-now-btn" id="comment-btn" data-album-id="{{ album.id }}">发表</button>
            {% for comment in comments %}

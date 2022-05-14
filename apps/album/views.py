@@ -272,7 +272,7 @@ def addtags():
         album = AlbumModel.query.get(album_id)
         havetags = [tag.tagname for tag in album.tags]
         if len(album.tags)>3:
-            return restful.params_error(message='相册最多三个标签')
+            return restful.params_error(message='资源最多三个标签')
         all_tags = AlbumTagsModel.query.all()
         all_tagnames = [tag.tagname for tag in all_tags]
 

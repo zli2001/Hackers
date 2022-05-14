@@ -23,7 +23,7 @@ header, section, footer, hgroup{
 #header h1{
 	padding:0 20px;
 	margin:5px 0;
-	text-shadow:2px 1px 1px #333, 2px 2px 1px #888;
+	text-shadow:2px 1px 1px #dbd9d9, 2px 2px 1px #e2dfdf;
 	color:#EAEAEA;
 	float:left;
 	font-size:27px;
