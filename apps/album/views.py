@@ -14,7 +14,7 @@ import threading
 import config
 from flask_paginate import Pagination,get_page_parameter
 from werkzeug.utils import secure_filename
-from utils.upload import bucket,change_filename,base_images_url
+from utils.upload import bucket,change_filename,base_images_url,base_resources_url
 bp = Blueprint('album',__name__,url_prefix='/b')
 
 
@@ -142,13 +142,55 @@ def upload_imges():
     if count and album_id:
         for i in range(0,int(count)):
             file = request.files[str(i)]
-            file_name = secure_filename(change_filename(file.filename)+uuid.uuid4().hex[:10]+'')
+            file_name = secure_filename(change_filename(file.filename).split('.')[0]+uuid.uuid4().hex[:10]+'')
             bucket.put_object('images/' + file_name + '.jpg', file,progress_callback=percentage)
             image = ImagesModel(url=base_images_url+file_name+'.jpg',album_id=album_id)
             if album.author == g.front_user:
                 rate = 0
                 db.session.add(image)
         db.session.commit()
+        return restful.success()
+    else:
+        return restful.server_error()
+
+
+import os
+@bp.route('/download_resource/',methods=["POST"])
+@login_required
+def download_resource():
+    print("yes")
+    album_id = request.form.get('album_id')
+    global rate
+    rate = 0
+    #count = request.form.get('count')
+    album = AlbumModel.query.get(album_id)
+    resource_url = album.resource_url
+    file_name=resource_url.split('/')[-2]+'/'+resource_url.split('/')[-1]
+    to_file=os.path.abspath("./")+'/download/'+file_name.split('/')[-1]
+    if album_id:
+        bucket.get_object_to_file(file_name,to_file)
+        return restful.success()
+    else:
+        return restful.server_error()
+
+@bp.route('/upload_resource/',methods=["POST"])
+@login_required
+def upload_resource():
+    global rate
+    rate = 0
+    #count = request.form.get('count')
+    album_id = request.form.get('album_id')
+    album = AlbumModel.query.get(album_id)
+    if album_id:
+        file = request.files[str(0)]
+        file_name = secure_filename(change_filename(file.filename))
+        bucket.put_object('resources/' + file_name, file, progress_callback=percentage)
+        #image = ImagesModel(url=base_images_url + file_name + '.jpg', album_id=album_id)
+        album.resource_url = base_resources_url+file_name
+        #if album.author == g.front_user:
+            #rate = 0
+        db.session.commit()
+        #db.session.commit()
         return restful.success()
     else:
         return restful.server_error()

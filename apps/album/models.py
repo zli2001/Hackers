@@ -14,6 +14,7 @@ class AlbumModel(db.Model):
     power = db.Column(db.Integer,default=0)
     author_id = db.Column(db.String(150), db.ForeignKey("front_user.id"))
     author = db.relationship("FrontUserModel", backref='albums')
+    resource_url = db.Column(db.String(150))
 
 album_tag = db.Table(
     'album_tag',

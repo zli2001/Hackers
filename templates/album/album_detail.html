@@ -10,9 +10,35 @@
     <script src="{{ static("album/js/star_comment.js") }}"></script>
     <script src="{{ static("front/js/follow.js") }}"></script>
         <script>
+        $(function () {
+        $("#download-resource").click(function (){
+                var album_id = $(this).attr('data-album-id');
+        var fm = new FormData();
+        fm.append('album_id',album_id);
+        zlajax.post({
+            'url': '/b/download_resource/',
+            'data': fm,
+            processData: false,
+            contentType: false,
+            'success': function (data) {
+                if (data['code'] == 200) {
+                    swal('恭喜，下载成功','','success')
+                    setTimeout(function () {
+                        window.location.reload()
+                    },1000)
+                }else{
+                    swal(data['message'],'','error')
+                }
+            }
+        })
+            })
+        })
+
     window.onload=function(){
     follow();
+
 }
+
     </script>
 {% endblock %}
 
@@ -83,7 +109,10 @@
 
                 <div class="pic-info" style="font-size: 20px" >
                     {{ album.desc }}
-                    <button type="button" class="layui-btn layui-btn-lg" style="float:right;background: #8b82c2;">下载</button>
+                    <a href="{{ url_for("album.download_resource",album_id=album.id) }}" style="color:white;">下载</a>
+
+                    <button type="button" data id="download-resource" class="layui-btn layui-btn-lg" style="float:right;background: #8b82c2;" data-album-id="{{ album.id }}"> 下载</button>
+
 
                 </div>
             </div>

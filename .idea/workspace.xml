@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="前端页面修改">
-      <change afterPath="$PROJECT_DIR$/new.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/upload_oss/resources/code.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/album/album_detail_ori.html" afterDir="false" />
+    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="添加上传页面">
+      <change afterPath="$PROJECT_DIR$/download/20220515015733download_4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/album/images/文件.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/album/js/up_resource.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/album/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/album/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/album/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/album/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/album/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/album/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/album/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/album/css/album.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/album/css/album.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/album/css/album_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/album/css/album_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/album/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/album/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/album/js/up_img.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/album/js/up_img.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/album/album_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/album_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/album/image_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/image_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/album/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/album/my_album.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/my_album.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/u.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/u.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/upload.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +49,8 @@
         <option value="Flask Main" />
         <option value="Jupyter Notebook" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -287,11 +285,11 @@
       <recent name="E:\pycharm_pro\mycms\static\album\viewer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\webDev\myflask\static\album\images" />
       <recent name="D:\Git\webDev\myflask\data" />
       <recent name="D:\Git\webDev\flaskcms\apps" />
       <recent name="D:\Git\webDev\flaskcms\apps\front" />
       <recent name="E:\pycharm_pro\mycms\static\group\js" />
-      <recent name="E:\pycharm_pro\mycms\static\common\images" />
     </key>
   </component>
   <component name="RunManager" selected="Python.manage">
@@ -467,7 +465,8 @@
       <workItem from="1652260029366" duration="1517000" />
       <workItem from="1652266842173" duration="10434000" />
       <workItem from="1652327750607" duration="17934000" />
-      <workItem from="1652429089560" duration="8229000" />
+      <workItem from="1652429089560" duration="38016000" />
+      <workItem from="1652551660720" duration="3280000" />
     </task>
     <task id="LOCAL-00001" summary="cms登录，修改密码，banner界面布局完成，mongodb配置完成">
       <created>1535255722571</created>
@@ -637,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652361660567</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="添加上传页面">
+      <created>1652515267483</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1652515267483</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -729,7 +735,8 @@
     <MESSAGE value="改了很多很多界面" />
     <MESSAGE value="改了图标等" />
     <MESSAGE value="前端页面修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="前端页面修改" />
+    <MESSAGE value="添加上传页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加上传页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -804,6 +811,31 @@
           <line>1045</line>
           <option name="timeStamp" value="144" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/album/views.py</url>
+          <line>159</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/album/views.py</url>
+          <line>160</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/album/views.py</url>
+          <line>161</line>
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/album/views.py</url>
+          <line>162</line>
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/album/views.py</url>
+          <line>163</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/static/front/login/js/common.js</url>
           <line>1</line>
@@ -818,18 +850,9 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="form.validate()" language="Python" />
-        <watch expression="Message(prefix,sender=app.config['FLASKY_MAIL_SENDER'],recipients=[to],body=body)" language="Python" />
-        <watch expression="g.front_user" language="Python" />
-        <watch expression="user.check_pwd(password)" language="Python" />
-        <watch expression="config.ALIYUN_OSS_ID" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/myflask$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652514856405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myflask$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652554768926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flaskcms$mycms.coverage" NAME="mycms Coverage Results" MODIFIED="1651925924552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/myflask$mycms.coverage" NAME="mycms Coverage Results" MODIFIED="1652174794610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flaskcms$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652085473661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -1,4 +1,4 @@
-﻿  //建立一個可存取到該file的url
+  //建立一個可存取到該file的url
   function getObjectURL(file)
   {
     var url = null ;
@@ -19,12 +19,12 @@
   }
 
 $(function () {
-    var start_img = 0;
+    var img = 0;
     $("#upload-my-img").click(function () {
-        if(start_img ===0){
+        if(img ===0){
             $("#img-count-box").css('display','none')
             $("#img-progress").css('display','none')
-            start_img+=1;
+            img+=1;
         }else{
             $("#img-count-box").css('display','block')
             $("#img-progress").css('display','block')
@@ -33,6 +33,7 @@ $(function () {
      var modifies = [];
      var count = 0;
      var fm = new FormData();
+     //上传图片文件
      $("#file0").change(function(){
       if((this.files).length>=1){
           for(var i=0;i<this.files.length;i++){
@@ -56,9 +57,11 @@ $(function () {
           }
       }
     $("#all-count").text(count);
-    $("#img-count-box").css('display','block');
-    $("#progress").css('display','block')
-        });
+    $(".img-count-box").css('display','block');
+    $(".progress").css('display','block')
+  });
+
+    //上传图片
     $("#upload-now").click(function () {
         var islogin = $("#login-span").attr('data-login-user');
         if(!islogin){
@@ -117,119 +120,6 @@ $(function () {
             }
         })
 
-    });
-
-//资源上传部分
-     var start_resource = 0;
-     $("#upload-my-resource").click(function () {
-        if(start_resource==0){
-            $("#resource-count-box").css('display','none')
-            $("#resource-progress").css('display','none')
-            start_resource+=1;
-        }else{
-            $("#resource-count-box").css('display','block')
-            $("#resource-progress").css('display','block')
-        }
-    })
-     var modifies_resource = [];
-     var count_resource = 0;
-     var fm_resource = new FormData();
-     $("#file1").change(function(){
-      if((this.files).length==1){
-          for(var i=0;i<this.files.length;i++){
-              var objUrl = getObjectURL(this.files[i]) ;
-              var file_modi = this.files[i].lastModified;
-              if($.inArray(file_modi,modifies_resource) === -1){
-                  modifies_resource.push(file_modi);
-              }else{
-                  swal('上传重复资源~','','error')
-                  return;
-              }
-                if (objUrl)
-                {
-                  var d2=document.getElementById("d2");
-                  var resource=document.createElement("img");
-                  var resource_div=document.createElement("div");
-                  var  resource_name=document.createElement("p");
-                  var br=document.createElement("br");
-                    resource.src="../../static/album/images/文件.png";
-                    resource_name.innerText=this.files[0].name;
-
-                    resource_div.append(resource);
-                    resource_div.append(br);
-                    resource_div.append(resource_name);
-
-                    resource_div.setAttribute("style","text-align: center;")//使文字居中对齐
-
-                    d2.appendChild(resource_div);
-                    count_resource++;
-                    fm_resource.append(i,this.files[i]);
-                }
-          }
-      }
-    $("#resource-all-count").text(count);
-    $("#resource-count-box").css('display','block');
-    $("#resource-progress").css('display','block')
-  });
-
-     //上传资源
-    $("#upload-now-resource").click(function () {
-        var islogin = $("#login-span").attr('data-login-user');
-        if(!islogin){
-            swal('请先登录~');
-            return;
-        }
-        if(count_resource ===0){
-            swal('请添加资源','','error')
-            return;
-        }
-        var rescount = 0
-        $("#resource-loading").css('display','inline');
-        $(".ios").css('display','none');
-        $("#resource-upfile").css('display','none')
-        var album_id = $('#select-album option:selected') .val();//选中的值
-        fm_resource.append('count',count_resource);
-        fm_resource.append('album_id',album_id);
-           var sitv = setInterval(function(){
-           var prog_url = '/b/getrate/' ;                  // prog_url指请求进度的url
-            $.ajax({
-                url:prog_url,
-                method:'GET',
-                success:function (res) {
-                    if(rescount>res['progress']){
-                         var resss = $("#current-count").text();
-                            resss = parseInt(resss)+1;
-                            if(resss<count_resource){
-                                $("#resource-current-count").text(resss);
-                            }
-                    }else{
-                       rescount = res['progress'];
-                    }
-                    $("#resource-prog_in").css("width",res['progress']+'%');
-                    $("#resource-pro").text(res['progress']+'%');
-                }
-            })
-        }, 2000);
-           zlajax.post({
-            'url': '/b/upload_resource/',
-            'data': fm_resource,
-            processData: false,
-            contentType: false,
-            'success': function (data) {
-                if (data['code'] == 200) {
-                    clearInterval(sitv);
-                    swal('恭喜，资源上传成功~','','success')
-                    $("#resource-prog_in").css("width",'100%');
-                    $("#resource-pro").text('100%');
-                    $("#resource-current-count").text(count);
-                    setTimeout(function () {
-                        window.location.reload()
-                    },1000)
-                }else{
-                    swal(data['message'],'','error')
-                }
-            }
-        })
     });
 
     var is_open = 0;
@@ -373,6 +263,7 @@ $(function () {
         })
     })
 })
+
 
   $(function () {
         $(".del-im").click(function (event) {

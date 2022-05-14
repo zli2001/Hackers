@@ -15,6 +15,7 @@ base_posts_url = url_pre+'posts/'
 base_avater_url = url_pre+'avater/'
 base_groups_url = url_pre+'groups/'
 base_images_url = url_pre+'images/'
+base_resources_url = url_pre+'resources/'
 
 bucket_post = oss2.Bucket(auth,'oss-cn-hangzhou.aliyuncs.com','flask-cms')
 
