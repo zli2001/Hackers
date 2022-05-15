@@ -3,7 +3,7 @@ $(function () {
             var click_imgs = []
             var imgs_ches = $('input:checkbox:checked');
             if (imgs_ches.length === 0) {
-            swal('请勾选需要删除的相册')
+            swal('请勾选需要删除的资源')
                 return;
             }
             for (var i = 0; i < imgs_ches.length; i++) {

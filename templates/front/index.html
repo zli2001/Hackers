@@ -50,14 +50,19 @@
 					{% if loop.first %}
                        			 	<div class="item active">
                     			{% else %}
+
                        			 	<div class="item">
                     			{% endif %}
-                                <img src="{{ banner.img_url }}" class="ig">
-                                <div class="carousel-caption" style="padding-bottom: 20px;">
-                                    {{ banner.content }}
-                                </div>
+                                <a href="{{ banner.link_url }}">
+                                    <img src="{{ banner.img_url }}" class="ig">
+                                    <div class="carousel-caption" style="padding-bottom: 20px;">
+
+                                          {{ banner.content }}
+
+                                    </div>
+                                </a>
                             </div>
-              
+
                     {% endfor %}
                 </div>
 

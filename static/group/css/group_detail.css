@@ -15,7 +15,9 @@
     float: left;
     margin-top: 20px;
 }
-
+.topic-author-box a{
+   color:white
+}
 
 
 @media screen and (min-width: 701px){
@@ -28,10 +30,10 @@
    .topic-author-box img{float: left;width: 50px;height: 50px;}
 }
 
-.topic-title{font-weight: bold;font-size: 20px;float: left}
-.topic-author-name{float: left;margin-left: 20px;margin-top: 30px;font-weight: lighter;font-size: 16px}
-.topic-author-time{float: left;margin-left: 20px;color: #7bd2ae;margin-top: 35px}
-.topic-text{float: left;margin-top:30px;font-size: 16px;width: 100%}
+.topic-title{font-weight: bold;font-size: 20px;float: left;color:white}
+.topic-author-name{float: left;margin-left: 20px;margin-top: 30px;font-weight: lighter;font-size: 16px;color:white}
+.topic-author-time{float: left;margin-left: 20px;color: #d4d4d5;margin-top: 35px}
+.topic-text{float: left;margin-top:30px;font-size: 16px;width: 100%;color:white}
 .return-to-group{float: right;}
 .return-to-group a{color: #dfb1cc}
 .topic-comment-group{margin-top: 30px;float: left;width: 100%}

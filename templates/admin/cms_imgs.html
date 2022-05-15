@@ -45,7 +45,7 @@
                                  {% endif %}
 
                                 <div class="img-name">
-                                        相册名：<a href="{{ url_for("album.my_album",user_id=album.author.id) }}">
+                                        资源名：<a href="{{ url_for("album.my_album",user_id=album.author.id) }}">
                                     {% if album.name|length > 7 %}
                                     {{ (album.name)[:5]+'...' }}
                                         {% else %}

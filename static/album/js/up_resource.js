@@ -167,7 +167,7 @@ $(function () {
             },
             'success':function (data) {
                 if(data['code']==200){
-                    swal('相册权限改为：'+msg,'','success')
+                    swal('资源权限改为：'+msg,'','success')
                     $(".au").text(msg)
                 }else{
                     swal('网络错误','','error')

@@ -16,7 +16,7 @@ $(function () {
             },
             'success':function (data) {
                 if(data['code']==200){
-                    swal('恭喜,'+album_title+'相册创建成功','','success')
+                    swal('恭喜,'+album_title+'资源创建成功','','success')
                     setTimeout(function () {
                         window.location.reload()
                     },500)

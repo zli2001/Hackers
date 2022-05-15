@@ -153,7 +153,7 @@ def upload_imges():
     else:
         return restful.server_error()
 
-
+#通过api实现下载功能
 import os
 @bp.route('/download_resource/',methods=["POST"])
 @login_required
@@ -185,12 +185,8 @@ def upload_resource():
         file = request.files[str(0)]
         file_name = secure_filename(change_filename(file.filename))
         bucket.put_object('resources/' + file_name, file, progress_callback=percentage)
-        #image = ImagesModel(url=base_images_url + file_name + '.jpg', album_id=album_id)
         album.resource_url = base_resources_url+file_name
-        #if album.author == g.front_user:
-            #rate = 0
         db.session.commit()
-        #db.session.commit()
         return restful.success()
     else:
         return restful.server_error()

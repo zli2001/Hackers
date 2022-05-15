@@ -11,7 +11,7 @@
 .author-box{width: 100%;min-height:150px;color: #969696;background:#fff6ed}
 .mode-card{float: left;width:100%;padding: 5%}
 .mode-card img{width: 80px;height: 80px;padding: 10px;float:left}
-.mode-card a{color:#37a;font-weight: lighter;float:left;margin-top: 10px;}
+.mode-card a{color:#3377aad9;font-weight: lighter;float:left;margin-top: 10px;}
 .mode-card p{padding-left: 5%}
 .adrr{float: left;margin-top: 5px}
 
@@ -38,7 +38,7 @@
 .tab span{color: #fdbdd2
 }
 .tab span:hover{cursor: pointer}
-.tab a{color: #afc0f1;padding-left: 20px;text-decoration:none}
+.tab a{color: #d4d4d5;padding-left: 20px;text-decoration:none}
 
 
 /*评论盒子*/
@@ -47,8 +47,8 @@
     float: left;}
 
 .co-time{color: #bbb;font-size: 15px;height: 25px;line-height: 25px;margin-left: 10px}
-.co-time a{color: #4558b6}
-.comment-content{padding-top: 10px;font-size: 14px;margin-left: 10px}
+.co-time a{color: #d4d4d5}
+.comment-content{padding-top: 10px;font-size: 14px;margin-left: 10px;color:white}
 
 .comment-group{float: left;width: 90%;margin-top: 10px}
 .author-box{float: left}
@@ -136,4 +136,4 @@ margin-top: 10px;
     position: relative;
 }
 .ad img{margin-top: 50px}
-.ad-gg{position: absolute;right: 0px;color: white;bottom: 0;background-color: black;opacity: 0.5}
+.ad-gg{position: absolute;right: 0px;color: white;bottom: 0;background-color: #716262;opacity: 0.5}

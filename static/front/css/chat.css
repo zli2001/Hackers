@@ -53,7 +53,7 @@
 
 .chat-msg a {
     font-size: 12px;
-    color: #999;
+    color: #c9c8c8;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -89,7 +89,7 @@
 
 .chat-to-user a {
     font-weight: lighter;
-    color: #a06f5f
+    color: #e8e8e8
 }
 
 
@@ -115,7 +115,7 @@
 .chat-time {text-align: center;color: #FFFFFF;font-weight: lighter;font-size: 14px}
 
 .riimg{width: 10%;height: 48px;border-radius: 50%;float: right;margin-top: 10px}
-.m {padding: 15px;color: #f6f5f5;font-weight: lighter;font-size: 14px;}
+.m {padding: 15px;color: #000000;font-weight: lighter;font-size: 14px;}
 
 /*指示器*/
 .ri {
@@ -170,7 +170,7 @@
 
 .chat-title-box {
     font-size: 15px;
-    color: #a06f5f;
+    color: #e8e3de;
     padding-bottom: 20px;
     border-bottom: 1px solid #eeeeee;
 }

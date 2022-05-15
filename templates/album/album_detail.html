@@ -109,10 +109,14 @@
 
                 <div class="pic-info" style="font-size: 20px" >
                     {{ album.desc }}
-                    <a href="{{ url_for("album.download_resource",album_id=album.id) }}" style="color:white;">下载</a>
 
-                    <button type="button" data id="download-resource" class="layui-btn layui-btn-lg" style="float:right;background: #8b82c2;" data-album-id="{{ album.id }}"> 下载</button>
 
+                   <!---通过api实现的下载 <button type="button" data id="download-resource" class="layui-btn layui-btn-lg" style="float:right;background: #8b82c2;" data-album-id="{{ album.id }} ">
+                     下载  </button>  --->
+                    <!--- 通过点击链接实现下载--->
+                    <a href="{{ album.resource_url }}"  style="color:white;">
+                        <button type="button"  class="layui-btn layui-btn-lg" style="float:right;background: #8b82c2;" >  下载  </button>
+                    </a>
 
                 </div>
             </div>
