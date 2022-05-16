@@ -3,7 +3,7 @@
         el: "#app",
         delimiters: ['[[', ']]'],
         data: {
-            tags: ['读书', '电影', '旅游', '大学', '鞋子', '互联网','赏秋','自驾游','前端','后端','美女','古镇','美食','户外探险','约伴','好玩儿','娱乐']
+            tags: ['java', 'html', 'python', '小程序', '数据库', 'linux','ubuntu','android','云原生','后端','javascript','centos','hadoop','GUI','线程','sql','面试']
         },
         computed: {},
         methods: {
