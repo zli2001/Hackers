@@ -28,7 +28,7 @@
                     </div>
                     <ul class="counts">
                         <li style="border-right: 1px solid darkgrey">
-                            <p>&nbsp;{{ focus|length }}</p>
+                            <p class="num">&nbsp;{{ focus|length }}</p>
                             <p class="gray"><a href="{{ url_for("front.my_focus",user_id=user.id) }}">粉丝></a></p>
                         </li>
                         <li style="border-right: 1px solid darkgrey">
@@ -36,9 +36,7 @@
                             <p class="word">帖子数</p>
                         </li>
                         <li style="border-right: 1px solid darkgrey">
-                            <p class="num">{{ user.points }}
-                                <f
-                                /p>
+                            <p class="num">{{ user.points }}</p>
                             <p class="word">积分</p>
                         </li>
                         <li style="border-right: 1px solid darkgrey">

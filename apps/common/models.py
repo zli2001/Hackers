@@ -71,7 +71,6 @@ class FocusModel(db.Model):
     focus_time = db.Column(db.DateTime,default=datetime.now)
     own_user_id = db.Column(db.String(150),nullable=False)
     author_id = db.Column(db.String(100),db.ForeignKey("front_user.id"),nullable=False)
-
     author = db.relationship("FrontUserModel",backref='focuses')
 
 class HighlightModel(db.Model):

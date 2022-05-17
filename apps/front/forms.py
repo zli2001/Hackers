@@ -4,7 +4,6 @@ from wtforms.validators import DataRequired,Length,InputRequired,regexp,Regexp,E
 from wtforms import Form
 from apps.front.tools import cache
 from wtforms import ValidationError
-from flask_wtf import FlaskForm
 from utils import mychache
 
 

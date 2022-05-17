@@ -23,11 +23,11 @@
                 <div class="author-inf">
                     <img src="{{ user.avatar }}">
                     <div style="padding-left: 55px;margin-left: 55px;">
-                        <span style="font-size:20px;font-weight: bold"><a href="{{ url_for("front.u",user_id=user.id) }}">{{ user.nickname }}</a></span>
+                        <span style="font-size:20px;font-weight: bold;"><a href="{{ url_for("front.u",user_id=user.id) }}" style="color: white">{{ user.nickname }}</a></span>
                     </div>
                     <ul class="counts">
                         <li style="border-right: 1px solid darkgrey">
-                            <p>&nbsp;{{ fensi|length}}</p>
+                            <p style="color: white">&nbsp;{{ fensi|length}}</p>
                             <p class="gray">粉丝></p>
                         </li>
                         <li style="border-right: 1px solid darkgrey">

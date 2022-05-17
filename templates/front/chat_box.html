@@ -23,9 +23,9 @@
                     <div class="chat-user-info-box">
                         <div class="chat-name">
                                {% if (message.reciver_id|user_name).nickname|length >6 %}
-                             <a href="#">{{ (message.reciver_id|user_name).nickname[:5]+'...'}}</a>
+                             <a href="{{ url_for("front.chat_box",user_id=message.reciver_id) }}">{{ (message.reciver_id|user_name).nickname[:5]+'...'}}</a>
                                 {% else %}
-                                     <a href="#">{{ (message.reciver_id|user_name).nickname}}</a>
+                                     <a href="{{ url_for("front.chat_box",user_id=message.reciver_id) }}">{{ (message.reciver_id|user_name).nickname}}</a>
                             {% endif %}
                         </div>
                         <div class="chat-msg">

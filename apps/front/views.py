@@ -103,6 +103,7 @@ def change_color():
         return restful.success()
     else:
         return restful.server_error()
+
 @bp.route('/wx_get_posts/')
 def wx_get_posts():
     posts_obj = PostsModel.query.order_by(PostsModel.create_time.desc()).all()

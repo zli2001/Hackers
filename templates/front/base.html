@@ -75,17 +75,14 @@
       </ul>
             <ul class="nav navbar-nav navbar-right" style="border-color: #1d1239">
                 <li>
-                    <a href="{{ url_for("front.search") }}" style="color: white;font-size:  15px" ">
+                    <a href="{{ url_for("front.search") }}" style="color: white;font-size:  15px" >
                     <i style="color: #977cff;font-size: 9px" class="iconfont  layui-extend-sousuoxiao"></i> 搜索
                 </a></li>
-                <li><a href="{{ url_for("front.apost") }}" style="color: white;font-size:  15px" ">
+                <li><a href="{{ url_for("front.apost") }}" style="color: white;font-size:  15px" >
                    <i style="color: #ad4f78;font-size:  9px" class="iconfont  layui-extend-bianji1"></i> 发帖
                 </a></li>
                 {% if g.front_user %}
-                    <!---
-                    <li><a id="element_id" style="color: white">
-                    <i class="dashboard icon"></i>&nbsp;&nbsp;主题
-                </a></li>--->
+
                            <li><a href="{{ url_for("front.information") }}#" style="color: white;font-size:  15px ">
                      <i style="color: #d4a1be;font-size:  9px" class="iconfont  layui-extend-tixing"></i>消息
                 </a></li>
@@ -118,7 +115,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<script>var color = $("#element_id").cxColor();</script>
+
 {% block body %}
 
 {% endblock %}

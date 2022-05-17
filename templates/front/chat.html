@@ -59,7 +59,7 @@
                                         alt=""></a>
                         <div class="chat-user-info">
                             <div class="chat-name">
-                                <a href="">{{ (message.reciver_id|user_name).nickname }}</a>
+                                <a href="{{ url_for("front.chat_box",user_id=message.reciver_id) }}">{{ (message.reciver_id|user_name).nickname }}</a>
                             </div>
                             <div class="chat-msg">
                                 <a href="{{ url_for("front.chat_box",user_id=message.reciver_id) }}">

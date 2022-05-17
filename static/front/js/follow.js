@@ -11,7 +11,8 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-document.getElementById("dead").click();
+if (document.getElementById("dead")!=null)
+    {document.getElementById("dead").click();}
 
 
 function follow() {
