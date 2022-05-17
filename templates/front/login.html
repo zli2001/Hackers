@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="{{ static("common/Semantic-UI-2.2.4/dist/semantic.min.css") }}">
     <link rel="stylesheet" type="text/css" href="{{ static("front/login/css/index.css") }}">
     <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
     <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
                         <div class="login-box marginB10">
                             <button id="login_btn-1" type="button" class="btn btn-micv5 btn-block globalLogin" style="color: #fff9fe;background-color: #8870a9">登录</button>
                         </div>
-                        <div style="padding-bottom: 10px;color: #627597">第三方登录：</div>
+
                         <a class="ui circular dark big weibo icon button" href="{{ url_for("front.weibo_login") }}">
                           <i class="weibo icon"></i>
                         </a>
