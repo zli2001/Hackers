@@ -426,11 +426,11 @@ def setting_profile():
         else:
             return restful.params_error(message=get_error(form))
 
-@bp.route('/setting_count/',methods=["POST",'GET'])
+@bp.route('/setting_account/',methods=["POST",'GET'])
 @login_required
-def setting_count():
+def setting_account():
     if request.method == 'GET':
-        return render_template('front/setting_count.html')
+        return render_template('front/setting_account.html')
     else:
         form = ResetPwdForm(request.form)
         if form.validate():

@@ -4,7 +4,7 @@ $(function () {
         $(".set-base").addClass('active').siblings().removeClass('active')
     } else if (url.indexOf('setting_profile') >= 0) {
         $(".set-pro").addClass('active').siblings().removeClass('active')
-    } else if (url.indexOf('setting_count') >= 0) {
+    } else if (url.indexOf('setting_account') >= 0) {
         $(".set-cou").addClass('active').siblings().removeClass('active')
     }
 });
@@ -121,7 +121,7 @@ $(function () {
             return
         }
         zlajax.post({
-            'url': '/setting_count/',
+            'url': '/setting_account/',
             'data': {
                 'oldpwd': oldpwd,
                 'newpwd': newpwd,

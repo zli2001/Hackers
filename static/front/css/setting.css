@@ -40,7 +40,7 @@ div.tab a {
     font-weight: lighter;
 }
 div.tab a i{margin-left: 10px;font-size:25px}
-div.tab a span{color: #2f2f2f;margin-left: 10px}
+div.tab a span{color: #bfbbbb;margin-left: 10px}
 /* Change background color of buttons on hover */
 div.tab a:hover {
       background-color: #f0f0f0;
