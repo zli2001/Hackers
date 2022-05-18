@@ -172,7 +172,7 @@
                         {% if g.front_user %}
                             <span style="display: none;" id="now_user" data-user-id="{{ g.front_user.id }}"></span>
                         {% endif %}
-                        <div class="follow-add fow" v-if="user.is_focus_id!==1" v-bind:data-user-id="user.user_id" style="color: "><i class="layui-icon layui-icon-add-1"></i>关注</div>
+                        <div class="follow-add fow" v-if="user.is_focus_id!==1" v-bind:data-user-id="user.user_id" style="color:white "><i class="layui-icon layui-icon-add-1"></i>关注</div>
                         <div class="follow-added fow"  v-else v-bind:data-user-id="user.user_id"><i class="layui-icon layui-icon-ok-circle"></i>取消关注</div>
                     </li>
                 </ul>

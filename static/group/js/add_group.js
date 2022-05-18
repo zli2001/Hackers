@@ -92,7 +92,7 @@ $(function () {
         zlalert.alertConfirm({
             	"cancelText":"取消",
        			"confirmText":"确定",
-				"msg": "确定要退出小组吗？",
+				"msg": "确定要退出社区吗？",
 				"confirmCallback": function(){
 					zlajax.post({
                         'url':'/g/outgroup/',

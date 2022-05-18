@@ -15,7 +15,7 @@
 
         <div class="return-to-group">
                       <a href="{{ url_for("group.index") }}"><i
-                            class="reply icon"></i>返回小组首页
+                            class="reply icon"></i>返回社区首页
         </a>
          </div>
             <div class="group-box">
@@ -84,10 +84,10 @@
                 <div class="change-author">
                     <span>成员信息</span>
                     {% if g.front_user and g.front_user.id!=group.create_user and g.front_user in group.users%}
-                        <span style="float: right" id="out-group" data-group-id="{{ group.id }}"><a style="color: #e17f5a;">退出小组</a></span>
+                        <span style="float: right" id="out-group" data-group-id="{{ group.id }}"><a style="color: #e17f5a;">退出社区</a></span>
                     {% endif %}
                     {% if g.front_user and g.front_user.id==group.create_user %}
-                            <span style="float: right"><a style="color: #e16b60" href="{{ url_for("group.manage_group",gep=group.id) }}">管理小组</a></span>
+                            <span style="float: right"><a style="color: #e16b60" href="{{ url_for("group.manage_group",gep=group.id) }}">管理社区</a></span>
                     {% endif %}
                 </div>
                 <ul class="focus-ul">

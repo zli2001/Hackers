@@ -34,7 +34,7 @@ $(function () {
                                vm.groups.push(b);
                             }
                         }else {
-                            swal('小组不存在');
+                            swal('社区不存在');
                         }
                     }
                 })

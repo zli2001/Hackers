@@ -207,7 +207,7 @@ def updesc():
     else:
         return restful.params_error(get_error(form))
 import re
-#移除小组
+#移除社区
 @bp.route('/outgroup/',methods=['POST'])
 @login_required
 def outgroup():
@@ -233,7 +233,7 @@ def outgroup():
             else:
                 return restful.params_error(message='不能移除管理员')
         else:
-            return restful.params_error(message='小组成员不存在~')
+            return restful.params_error(message='社区成员不存在~')
     else:
         user = g.front_user
         for topic in user.topics:
@@ -287,7 +287,7 @@ def amanager():
 
     managers_id =[user.author_id for user in group.managers]
     if user not in group.users:
-        return restful.params_error(message='该成员没在小组中~')
+        return restful.params_error(message='该成员没在社区中~')
     if user.id == group.create_user:
         return restful.params_error(message='群主不能添加~')
     if user.id in managers_id:

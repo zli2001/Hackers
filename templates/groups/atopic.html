@@ -16,7 +16,7 @@
 {% block body %}
     <div class="main_contener">
         <div class="col-md-12">
-            <div class="return_group"><a href="{{ url_for("group.group_detail",group_id=group_id) }}"><i class="reply icon"></i>返回小组</a></div>
+            <div class="return_group"><a href="{{ url_for("group.group_detail",group_id=group_id) }}"><i class="reply icon"></i>返回社区</a></div>
             <div class="layui-form-item">
                 <input type="text"  required lay-verify="required" placeholder="请输入标题" name="title-topic" autocomplete="off"
                        class="layui-input">
@@ -25,7 +25,7 @@
             {% if g.front_user and g.front_user in group.users %}
                          <button style="float: right;margin-top: 10px" data-group-id="{{ group_id }}" class="layui-btn layui-bg-blue" id="sub-topic"> 发布</button>
             {% else %}
-              <button style="float: right;margin-top: 10px"  class="layui-btn layui-bg-blue">不是小组成员，无法发布讨论</button>
+              <button style="float: right;margin-top: 10px"  class="layui-btn layui-bg-blue">不是社区成员，无法发布讨论</button>
             {% endif %}
         </div>
     </div>

@@ -344,7 +344,6 @@ def apost():
                 else:
                     ta = TagsModel(tagname=tag)
                 post.tags.append(ta)
-
             charactors_len = len(do_striptags(content))
             post.author.points+=2
             post.author.charactors += charactors_len

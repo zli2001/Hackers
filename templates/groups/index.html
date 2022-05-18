@@ -18,13 +18,13 @@
                 </div>
             </div>
             <div class="search">
-                        <input type="text" placeholder="搜索你感兴趣的小组" class="layui-input" name="group_name">
+                        <input type="text" placeholder="搜索你感兴趣的社区" class="layui-input" name="group_name">
                         <button v-on:click="Search" class="layui-btn layui-btn-primary"><i class="search icon" style="float: left"></i></button>
                         <button class="layui-btn layui-btn-primary" id="refresh"><i class="refresh icon" style="float: left"></i></button>
             </div>
 
             <div class="tuijian jsn">
-                推荐小组
+                推荐社区
             </div>
                 {% for group in groups %}
                     <div class="group-box jsn">
@@ -69,11 +69,11 @@
         </div>
         <div class="col-md-4">
             <div class="welll">
-                <a class="cg" href="{{ url_for("group.crgroup") }}">创建小组</a>
+                <a class="cg" href="{{ url_for("group.crgroup") }}">创建社区</a>
                 <div class="paih">
                     <div class="paih-title">
                         <span>排名</span>
-                        <span class="pa-left">小组</span>
+                        <span class="pa-left">社区</span>
                         <span class="pa-left-2">成长值</span>
                     </div>
                     <ul>
