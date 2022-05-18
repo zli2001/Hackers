@@ -49,7 +49,7 @@ $(function () {
                             }
                             vm.posts = posts;
                         } else {
-                            swal('帖子不存在');
+                            swal('文章不存在');
                         }
                     }
                 })
@@ -87,7 +87,7 @@ $(function () {
                 zlalert.alertConfirm({
                     "cancelText": "取消",
                     "confirmText": "确定",
-                    "msg": "确定要删除帖子？",
+                    "msg": "确定要删除文章？",
                     "confirmCallback": function () {
                         zlajax.post({
                             'url': '/cms/posts/',
@@ -125,7 +125,7 @@ $(function () {
         var comment_ids = [];
         var comments_ches = $('input:checkbox:checked')
         if (comments_ches.length === 0) {
-            swal('请勾选需要删除的帖子')
+            swal('请勾选需要删除的文章')
             return;
         }
         for (var i = 0; i < comments_ches.length; i++) {
@@ -136,7 +136,7 @@ $(function () {
         zlalert.alertConfirm({
             "cancelText": "取消",
             "confirmText": "确定",
-            "msg": "确定要删除帖子吗？",
+            "msg": "确定要删除文章吗？",
             "confirmCallback": function () {
                 zlajax.post({
                     'url': '/cms/post_large_del/',
@@ -196,7 +196,7 @@ $(function () {
         zlalert.alertConfirm({
             "cancelText": "取消",
             "confirmText": "确定",
-            "msg": "确定要删除帖子？",
+            "msg": "确定要删除文章？",
             "confirmCallback": function () {
                 zlajax.post({
                     'url': '/cms/posts/',

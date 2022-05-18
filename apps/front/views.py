@@ -368,7 +368,7 @@ def dpost():
         db.session.commit()
         return restful.success()
     else:
-        return restful.params_error(message='帖子不存在')
+        return restful.params_error(message='文章不存在')
 
 
 
@@ -529,7 +529,7 @@ def post_star():
         else:
             if post.author.id!=g.front_user.id:
                 cache.lpush('%s'%post.author.id,
-                            {'type': '用户消息', 'title': '赞了你的帖子','post_id':post.id,'content':post.title, 'sender':g.front_user.id, 'username':g.front_user.nickname,
+                            {'type': '用户消息', 'title': '赞了你的文章','post_id':post.id,'content':post.title, 'sender':g.front_user.id, 'username':g.front_user.nickname,
                              'create_time': time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())})
             star = StarModel(post_id=post_id,author_id=g.front_user.id)
             db.session.add(star)
@@ -555,7 +555,7 @@ def post_collect():
         else:
             if post.author.id!=g.front_user.id:
                 cache.lpush('%s'%post.author.id,
-                            {'type': '用户消息', 'title': '收藏了你的帖子','post_id':post.id,'content':post.title, 'sender':g.front_user.id, 'username':g.front_user.nickname,
+                            {'type': '用户消息', 'title': '收藏了你的文章','post_id':post.id,'content':post.title, 'sender':g.front_user.id, 'username':g.front_user.nickname,
                              'create_time': time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())})
             collect = CollectModel(post_id=post_id,author_id=g.front_user.id)
             db.session.add(collect)
@@ -575,7 +575,7 @@ def comment():
 
         if post.author.id != g.front_user.id:
             cache.lpush('%s' % post.author.id,
-                        {'type': '用户消息', 'title': '评论了你的帖子','post_id':post.id,'content': post.title, 'sender': g.front_user.id,
+                        {'type': '用户消息', 'title': '评论了你的文章','post_id':post.id,'content': post.title, 'sender': g.front_user.id,
                          'username': g.front_user.nickname,
                          'create_time': time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())})
 

@@ -25,7 +25,7 @@
                         <div class="name">
                             <a href="" style="color: white">{{ group.name }}</a>
                             {% if g.front_user and g.front_user in group.users %}
-                                <button class="layui-btn-sm layui-btn">已加入</button>
+                                <button class="layui-btn-sm layui-btn" style="background: #B37B7E">已加入</button>
                             {% else %}
                                 <button class="layui-btn layui-btn-warm layui-btn-sm join_now"
                                         data-group-id="{{ group.id }}">加入
@@ -102,7 +102,7 @@
                                 </div>
                             </a>
                              {% if user.id == group.create_user  %}
-                                 <div class="follow-add"><a style="float: left" class="ui yellow mini label">组长</a></div>
+                                 <div class="follow-add"><a style="float: left" class="ui pink mini label">组长</a></div>
                                  {% elif user.id in managers_id %}
                                   <div class="follow-add"><a style="float: left" class="ui grey mini label">管理员</a></div>
                                  {% else %}

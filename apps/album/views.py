@@ -176,9 +176,6 @@ def download_resource():
 @bp.route('/upload_resource/',methods=["POST"])
 @login_required
 def upload_resource():
-    global rate
-    rate = 0
-    #count = request.form.get('count')
     album_id = request.form.get('album_id')
     album = AlbumModel.query.get(album_id)
     if album_id:

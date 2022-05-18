@@ -32,7 +32,6 @@ def index():
     my_bar.change_day()
     for comment in comments:
         create_time = comment.create_time
-        create_time = comment.create_time
         timestamp = (now - create_time).total_seconds()
         my_bar.create_time(timestamp)
 
@@ -206,15 +205,15 @@ def posts():
     else:
         post_id = request.form.get('post_id')
         post = PostsModel.query.get(post_id)
-        imgs = re.findall(r'<img src="https://flask-cms.oss-cn-hangzhou.aliyuncs.com(.*?)"',post.content,re.S)
+        imgs = re.findall(r'<img src="https://flask-cms.oss-cn-hangzhou.aliyuncs.com(.*?)"',post.content,re.S)#寻找文章内是否有图片
         if len(imgs)>0:
-            [bucket.delete_object(img) for img in imgs]
+            [bucket.delete_object(img) for img in imgs]  #删除对象存储中的图片
         db.session.delete(post)
         db.session.commit()
         return restful.success()
 
 from sqlalchemy import or_
-#批量删除帖子
+#批量删除文章
 @bp.route('/post_large_del/',methods=['POST'])
 @login_required
 def post_large_del():
@@ -230,7 +229,7 @@ def post_large_del():
         db.session.commit()
         return restful.success()
     else:
-        return restful.params_error(message='帖子不存在')
+        return restful.params_error(message='文章不存在')
 
 
 
@@ -262,8 +261,6 @@ def comments():
     if request.method == 'GET':
         inputs = request.args.get("comment_search")
         if inputs:
-            # search_comments = CommentModel.query.filter(or_(CommentModel.content.contains(inputs),PostsModel.content.contains(inputs)
-            #                               ,PostsModel.title.contains(inputs))).all()
             search_comments = db.session.query(CommentModel).outerjoin(PostsModel).filter(
                 or_(CommentModel.content.contains(inputs), PostsModel.content.contains(inputs)
                 ,PostsModel.title.contains(inputs))

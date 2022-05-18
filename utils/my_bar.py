@@ -30,8 +30,8 @@ def create_time(timestamp):
 
 def create_post_bar():
     from pyecharts import Bar
-    bar = Bar("帖子分析", "帖子发布量分析")
-    bar.add("帖子", ["今天", "3天内帖子", "7天内帖子", "30内帖子","总共帖子"], [day1,day3,day7,day30,other],is_more_utils=True)
+    bar = Bar("文章分析", "文章发布量分析")
+    bar.add("文章", ["今天", "3天内文章", "7天内文章", "30内文章","总共文章"], [day1,day3,day7,day30,other],is_more_utils=True)
     return bar
 
 def create_pie_bar():

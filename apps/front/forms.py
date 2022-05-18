@@ -37,17 +37,17 @@ class Setting_profile_Form(Form):
     desc = TextField(validators=[Length(0,100,message='简介长度过长')])
 
 class PostIdForm(Form):
-    post_id = StringField(validators=[InputRequired(message='请传入帖子Id')])
+    post_id = StringField(validators=[InputRequired(message='请传入文章Id')])
 
 class CommentForm(Form):
-    post_id = StringField(validators=[InputRequired(message='请传入帖子Id')])
+    post_id = StringField(validators=[InputRequired(message='请传入文章Id')])
     content = TextField(validators=[InputRequired(message='请输入评论内容')])
 
 class FocusForm(Form):
     own_user_id = StringField(validators=[InputRequired(message='请传入关注用户id')])
 
 class AcommentForm(Form):
-    post_id = StringField(validators=[InputRequired(message='请传入帖子Id')])
+    post_id = StringField(validators=[InputRequired(message='请传入文章Id')])
     content = TextField(validators=[InputRequired(message='请输入评论内容')])
     comment_id = IntegerField(validators=[InputRequired(message='请传入评论id')])
 

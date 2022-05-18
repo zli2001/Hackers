@@ -92,7 +92,7 @@
                                             <button type="button" class="btn btn-default clo"
                                                     data-dismiss="modal" >Close</button>
                                             <button type="button" class="btn btn-danger port_now"
-                                            data-user-id="{{ g.front_user.id }}" data-type="帖子"
+                                            data-user-id="{{ g.front_user.id }}" data-type="文章"
                                             data-bereport-id="{{ post.author.id }}">立即举报</button>
                                         </div>
                                     </div>
@@ -200,7 +200,7 @@
                 </div>
             </div>
             <div class="m-title"><a href="{{ url_for("front.u",user_id=post.author.id) }}"
-                                    style="color: #FFFFFF">最新帖子</a></div>
+                                    style="color: #FFFFFF">最新文章</a></div>
             <div class="m-discription">
                 <ul class="m-albums">
                     {% for post in hot_posts %}

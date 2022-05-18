@@ -14,7 +14,7 @@ $(function () {
             zlalert.alertConfirm({
             "cancelText": "取消",
             "confirmText": "确定",
-            "msg": "确定要删除图片吗？",
+            "msg": "确定要删除资源吗？",
             "confirmCallback": function () {
                 zlajax.post({
                     'url': '/cms/img_large_del/',
@@ -23,7 +23,7 @@ $(function () {
                     },
                     'success': function (data) {
                         if (data['code'] == 200) {
-                            swal('删除成功，么么哒~','','success')
+                            swal('删除成功','','success')
                             for (var i = 0; i < imgs_ches.length; i++) {
                                 var cro = imgs_ches[i].getAttribute('data-post-id');
                                 var par = imgs_ches[i].parentNode.parentNode.parentNode.parentNode
