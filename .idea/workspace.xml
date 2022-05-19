@@ -1,34 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="改源、改小组为社区">
+    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="改帖子为文章等">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/admin/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/album/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/album/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/front/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/front/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/front/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/front/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/new.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data/new.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/cms_images.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/cms_images.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/cms_posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/cms_posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/album/js/up_resource.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/front/css/post_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/front/css/post_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/cms_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/cms_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/cms_boards.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/cms_boards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/cms_comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/cms_comments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/cms_front_users.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/cms_front_users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/album/album_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/album_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/album/album_detail_ori.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/album/my_album.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/my_album.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/my_focus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/my_focus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/setting_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/setting_account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/setting_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/setting_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/setting_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/setting_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/u.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/u.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/groups/group_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/groups/group_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/my_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/my_bar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrequirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myrequirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,6 +261,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -485,7 +461,10 @@
       <workItem from="1652710067942" duration="1378000" />
       <workItem from="1652765233254" duration="22262000" />
       <workItem from="1652858135031" duration="5539000" />
-      <workItem from="1652872776676" duration="17834000" />
+      <workItem from="1652872776676" duration="19115000" />
+      <workItem from="1652927518010" duration="4097000" />
+      <workItem from="1652934581157" duration="3036000" />
+      <workItem from="1652961694594" duration="1423000" />
     </task>
     <task id="LOCAL-00001" summary="cms登录，修改密码，banner界面布局完成，mongodb配置完成">
       <created>1535255722571</created>
@@ -711,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652861879475</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="改帖子为文章等">
+      <created>1652895264986</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1652895264986</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -781,7 +767,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="登录return_to 注册页面完成 脚指架setting_base完成" />
     <MESSAGE value="设置界面完成" />
     <MESSAGE value="头像上传完成，nickname修改完成" />
     <MESSAGE value="点赞，收藏完成" />
@@ -806,7 +791,8 @@
     <MESSAGE value="删去可能会导致错误的import flaskform语句" />
     <MESSAGE value="改名字setting_account" />
     <MESSAGE value="改源、改小组为社区" />
-    <option name="LAST_COMMIT_MESSAGE" value="改源、改小组为社区" />
+    <MESSAGE value="改帖子为文章等" />
+    <option name="LAST_COMMIT_MESSAGE" value="改帖子为文章等" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -903,7 +889,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/myflask$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652885099366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/myflask$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652962866226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flaskcms$mycms.coverage" NAME="mycms Coverage Results" MODIFIED="1651925924552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/myflask$mycms.coverage" NAME="mycms Coverage Results" MODIFIED="1652174794610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flaskcms$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652085473661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
