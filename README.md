@@ -15,6 +15,7 @@ python:3.6.15
 celery email task
 
 
+
 ## ** How to use **
 ```bash
 # 1.克隆到本地
@@ -59,8 +60,8 @@ python manage.py db upgrade
 # 6.映射数据库
 python manage.py db upgrade
 
-#使用data/test.sql建立测试数据库
-
+#可使用data/test.sql建立测试数据库
+#项目示例数据部分来自互联网，如有侵权请联系我删除。
 
 #管理员创建：
 python manage.py add_cms_user -u your_username -p your_passowrd -e your_email

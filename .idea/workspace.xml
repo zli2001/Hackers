@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="删除无用Semantic-ui文件等">
-      <change afterPath="$PROJECT_DIR$/pics/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pics/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pics/img_2.png" afterDir="false" />
+    <list default="true" id="0508668f-5947-409a-955e-27436749937a" name="Default" comment="修改对象存储路径">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/admin/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/front/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/front/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/groups/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/groups/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/new.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data/test.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrequirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/groups/create_group.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/groups/create_group.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/upload.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -480,7 +466,7 @@
       <workItem from="1652934581157" duration="3036000" />
       <workItem from="1652961694594" duration="4396000" />
       <workItem from="1653114422641" duration="660000" />
-      <workItem from="1654496012954" duration="2119000" />
+      <workItem from="1654496012954" duration="2240000" />
     </task>
     <task id="LOCAL-00001" summary="cms登录，修改密码，banner界面布局完成，mongodb配置完成">
       <created>1535255722571</created>
@@ -720,7 +706,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652963320132</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="修改对象存储路径">
+      <created>1654498793964</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1654498793964</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -790,7 +783,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="头像上传完成，nickname修改完成" />
     <MESSAGE value="点赞，收藏完成" />
     <MESSAGE value="评论完成" />
     <MESSAGE value="前台功能基本完全实现" />
@@ -815,7 +807,8 @@
     <MESSAGE value="改源、改小组为社区" />
     <MESSAGE value="改帖子为文章等" />
     <MESSAGE value="删除无用Semantic-ui文件等" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除无用Semantic-ui文件等" />
+    <MESSAGE value="修改对象存储路径" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改对象存储路径" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
