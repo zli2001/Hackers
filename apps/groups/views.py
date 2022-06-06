@@ -223,7 +223,7 @@ def outgroup():
         if user in group.users:
             if not manager:
                 for topic in user.topics:
-                    imgs = re.findall(r'<img src="https://flask-cms.oss-cn-hangzhou.aliyuncs.com/(.*?)"', topic.content,
+                    imgs = re.findall(r'<img src="https://xxx.oss-cn-hangzhou.aliyuncs.com/(.*?)"', topic.content,
                                       re.S)
                     if len(imgs) > 0:
                         [bucket.delete_object(img) for img in imgs]
@@ -237,7 +237,7 @@ def outgroup():
     else:
         user = g.front_user
         for topic in user.topics:
-            imgs = re.findall(r'<img src="https://flask-cms.oss-cn-hangzhou.aliyuncs.com/(.*?)"', topic.content, re.S)
+            imgs = re.findall(r'<img src="https://xxx.oss-cn-hangzhou.aliyuncs.com/(.*?)"', topic.content, re.S)
             if len(imgs) > 0:
                 [bucket.delete_object(img) for img in imgs]
             db.session.delete(topic)

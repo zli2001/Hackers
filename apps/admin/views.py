@@ -205,7 +205,7 @@ def posts():
     else:
         post_id = request.form.get('post_id')
         post = PostsModel.query.get(post_id)
-        imgs = re.findall(r'<img src="https://flask-cms.oss-cn-hangzhou.aliyuncs.com(.*?)"',post.content,re.S)#寻找文章内是否有图片
+        imgs = re.findall(r'<img src="https://xxx.oss-cn-hangzhou.aliyuncs.com(.*?)"',post.content,re.S)#寻找文章内是否有图片
         if len(imgs)>0:
             [bucket.delete_object(img) for img in imgs]  #删除对象存储中的图片
         db.session.delete(post)
@@ -222,7 +222,7 @@ def post_large_del():
         posts_ids = post_ids.split(',')
         for po in posts_ids:
             post = PostsModel.query.get(po)
-            imgs = re.findall(r'<img src="https://flask-cms.oss-cn-hangzhou.aliyuncs.com/(.*?)"', post.content, re.S)
+            imgs = re.findall(r'<img src="https://xxx.oss-cn-hangzhou.aliyuncs.com/(.*?)"', post.content, re.S)
             if len(imgs) > 0:
                 [bucket.delete_object(img) for img in imgs]
             db.session.delete(post)

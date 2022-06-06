@@ -361,7 +361,8 @@ def dpost():
     if post:
         [db.session.delete(c) for c in CommentModel.query.filter_by(post_id = post_id).all()]
         [db.session.delete(c) for c in CollectModel.query.filter_by(post_id = post_id).all()]
-        imgs = re.findall(r'<img src="flask-cms.oss-cn-hangzhou.aliyuncs.com/(.*?)"', post.content, re.S)
+        #改成你自己的oss路径
+        imgs = re.findall(r'<img src="xxx.oss-cn-hangzhou.aliyuncs.com/(.*?)"', post.content, re.S)
         if len(imgs) > 0:
             [bucket.delete_object(img) for img in imgs]
         db.session.delete(post)

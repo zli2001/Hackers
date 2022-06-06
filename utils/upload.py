@@ -4,8 +4,8 @@ import os, sys
 from datetime import datetime
 import config
 auth = oss2.Auth(config.ALIYUN_OSS_ID,config.ALIYUN_OSS_SECRET)
-
-bucket = oss2.Bucket(auth,'oss-cn-hangzhou.aliyuncs.com','flask-cms')
+#改成你自己的路径
+bucket = oss2.Bucket(auth,'oss-cn-hangzhou.aliyuncs.com','xxx')
 
 
 # 地址前缀
@@ -16,8 +16,8 @@ base_avater_url = url_pre+'avater/'
 base_groups_url = url_pre+'groups/'
 base_images_url = url_pre+'images/'
 base_resources_url = url_pre+'resources/'
-
-bucket_post = oss2.Bucket(auth,'oss-cn-hangzhou.aliyuncs.com','flask-cms')
+#改成你自己的路径
+bucket_post = oss2.Bucket(auth,'oss-cn-hangzhou.aliyuncs.com','xxx')
 
 
 

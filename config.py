@@ -47,7 +47,9 @@ CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
 # aliyun oss
 ALIYUN_OSS_ID = os.environ.get('ALIYUN_OSS_ID')
 ALIYUN_OSS_SECRET = os.environ.get('ALIYUN_OSS_SECRET')
-URL_PREFIX = 'https://flask-cms.oss-cn-hangzhou.aliyuncs.com/'# 外网访问
+#改成你自己的阿里云oss地址
+#并全局搜索此路径，将项目中所有的路径都更改掉
+URL_PREFIX = 'https://xxx.oss-cn-hangzhou.aliyuncs.com/'# 外网访问
 
 # github登录
 GITHUB_CLIENT_ID = os.environ.get('GITHUB_CLIENT_ID')

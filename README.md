@@ -1,35 +1,12 @@
 # Hackers 开发者交流学习平台
-
-
-## TODO:
-- [x] 删除支付页面
-- [x] 更换图标
-- [x] 添加下载资源功能 
-- [x] 上传图片数据
-- [x] 社区头像  
-- [x] 插入本地数据
-- [ ] **写文档**
-    0. 文章编号
-- [ ] ppt:
-    0. 找ppt模板
-    1. 项目需求
-    2. 项目分析与设计开发过程
-    3. 项目分工
-    4. 项目运行视频
-
-
-
-
-
+Web课程设计：基于flask的多用户博客系统
 ## 相关技术
-
-~~支付：PaysApi~~
 
 python:3.6.15
 
 内容存储：mysql
 
-图片存储：阿里云对象存储oss
+图片、资源存储：[阿里云对象存储oss](https://blog.csdn.net/Doudou_Mylove/article/details/107060228)
 
 邮箱注册: flask_email 
 
@@ -48,14 +25,26 @@ pip install -r requirements.txt
 ```
 [pip安装MarkupSafe==1.0失败解决方案](https://blog.csdn.net/h106140873/article/details/104794744/)
 
+
 3.安装mysql以及redis并启动。
+安装redis若报错：
+```bash
+redis.exceptions.ConnectionError: Error 10061 connecting to 47.107.66.196:6379. 由于目标计算机积极拒绝，无法连接。.
+127.0.0.1 - - [07/May/2022 21:36:56] "POST /signup/ HTTP/1.1" 500 -
+```
+(安装redis](https://www.cnblogs.com/xiaodai0/p/9761192.html)
+
+解决:把47.107.66.196改为127.0.0.1
+
 
 4.修改config.py中的配置。将有关的变量写入用户变量。
 
-```bash
-# 5.数据库迁移
-python manage.py db migrate
-```
+
+5.数据库
+先在mysql创建空数据库mycms
+再迁移数据库
+`python manage.py db migrate`
+
 如果遇到[数据库迁移错误](https://stackoverflow.com/questions/32798937/cant-migrate-or-upgrade-database-with-flask-migrate-alembic)
 do this:
 
@@ -70,6 +59,9 @@ python manage.py db upgrade
 # 6.映射数据库
 python manage.py db upgrade
 
+#使用data/test.sql建立测试数据库
+
+
 #管理员创建：
 python manage.py add_cms_user -u your_username -p your_passowrd -e your_email
 
@@ -79,3 +71,9 @@ python manage.py add_front_user -u your_username -p your_passowrd -e your_email
 # 启动
 python manage.py runserver
 ```
+效果：
+![首页](pics/img.png)
+![发帖](pics/img_1.png)
+![资源](pics/img_2.png)
+参考链接
+[https://github.com/RelaxedDong/mycms](https://github.com/RelaxedDong/mycms)
